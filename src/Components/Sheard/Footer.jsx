@@ -188,13 +188,13 @@ const Footer = () => {
                     </div>
 
                     <div className="mt-16 border-t border-gray-100 pt-8">
-                        <p className="text-center text-xs/relaxed text-gray-500">
+                        <p className="text-center text-xs/relaxed ">
                             © Copyright 2024. All rights reserved.
 
                             <br />
 
                             Created with
-                            <a target="_blank" href="https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables" className="text-white  transition hover:text-white/75"> Next.js</a>
+                            <a target="_blank" href="https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables" className="text-green-400  transition hover:text-white/75"> Next.js</a>
                         </p>
                     </div>
                 </div>
