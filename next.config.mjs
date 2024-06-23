@@ -2,7 +2,14 @@
 const nextConfig = {
 
     images: {
-        domains: ['cdn.rareblocks.xyz'],
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "*",
+                port: "",
+                pathname: "**",
+            },
+        ],
     },
 
 };
