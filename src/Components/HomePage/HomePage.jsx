@@ -1,6 +1,7 @@
 import Banner from "./Banner/Banner";
 import MyAchivment from "./MyAchiv/MyAchivment";
 import Messege from "./SendMessege/Messege";
+import Skills from "./Skills/Skills";
 import State from "./StateSection/State";
 
 
@@ -18,6 +19,11 @@ const HomePage = () => {
             {/* Status section  */}
             <div>
                 <State></State>
+            </div>
+
+            {/* Skills Section */}
+            <div>
+                <Skills></Skills>
             </div>
 
             {/* My Achivment section */}
