@@ -1,4 +1,5 @@
 import Image from "next/image";
+import next from "../../../../public/next.svg"
 
 
 const Skills = () => {
@@ -110,7 +111,7 @@ const Skills = () => {
                             {/* Next.js */}
                             <div className="avatar grid justify-center">
                                 <div className="w-24 rounded-lg ">
-                                    <Image className=" relative w-full xl:max-w-lg  xl:mx-auto 2xl:origin-bottom 2xl:scale-110" src="https://w7.pngwing.com/pngs/87/586/png-transparent-next-js-hd-logo-thumbnail.png" alt="My Responsive Image" layout="responsive" width={500} height={500} />
+                                    <Image className=" relative w-full xl:max-w-lg  xl:mx-auto 2xl:origin-bottom 2xl:scale-110" src={next} alt="My Responsive Image" layout="responsive" width={500} height={500} />
 
                                 </div>
                                 <p className="text-xl font-semibold text-yellow-600">Next.js</p>
