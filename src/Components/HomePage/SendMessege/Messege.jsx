@@ -18,6 +18,7 @@ const Messege = () => {
 
                     <div class="max-w-6xl mx-auto mt-12 overflow-hidden bg-gradient-to-r from-fuchsia-600 to-blue-600 rounded-2xl shadow-md lg:mt-20">
                         <div class="grid items-stretch grid-cols-1 lg:grid-cols-5">
+                            
                             <div class="lg:col-span-3">
                                 <div class="p-6 sm:p-10">
                                     <h3 class="text-2xl font-semibold text-black">Send us a message</h3>
@@ -209,6 +210,7 @@ const Messege = () => {
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

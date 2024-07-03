@@ -1,5 +1,6 @@
 import Banner from "./Banner/Banner";
 import MyAchivment from "./MyAchiv/MyAchivment";
+import Education from "./MyEducation/Education";
 import Projects from "./Projects/Projects";
 import Messege from "./SendMessege/Messege";
 import Skills from "./Skills/Skills";
@@ -35,6 +36,11 @@ const HomePage = () => {
             {/* My Achivment section */}
             <div>
                 <MyAchivment></MyAchivment>
+            </div>
+
+            {/* My Education */}
+            <div>
+                <Education></Education>
             </div>
 
             {/* Messege Contact section of Home */}
