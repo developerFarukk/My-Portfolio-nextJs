@@ -6,14 +6,15 @@ const Navbar = () => {
 
     const nav = <>
         <li><Link href="/">Home</Link></li>
-        <li><Link href="/">About</Link></li>
-        <li><Link href="/">Skills</Link></li>
-        <li><Link href="/">Education</Link></li>
+        <li><Link href="#about" >About</Link></li>
+        {/* <li><Link activeClass="active" href="about" spy={true} smooth={true} offset={-70} duration={500}>About</Link></li> */}
+        <li><Link href="#skills">Skills</Link></li>
+        <li><Link href="#education">Education</Link></li>
         <li><Link href="/">Experience</Link></li>
-        <li><Link href="/">Project</Link></li>
+        <li><Link href="#projects">Project</Link></li>
         <li><Link href="/">My Team</Link></li>
         <li><Link href="/">Service</Link></li>
-        <li><Link href="/">Contact</Link></li>
+        <li><Link href="#contact">Contact</Link></li>
     </>
 
 

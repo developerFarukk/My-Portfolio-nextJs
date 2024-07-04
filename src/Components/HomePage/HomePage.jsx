@@ -14,7 +14,7 @@ const HomePage = () => {
         <div>
 
             {/* Banner section */}
-            <div>
+            <div id="about" >
                 <Banner></Banner>
             </div>
 
@@ -24,12 +24,12 @@ const HomePage = () => {
             </div>
 
             {/* Skills Section */}
-            <div>
+            <div id="skills">
                 <Skills></Skills>
             </div>
 
             {/* My Recent Project */}
-            <div>
+            <div id="projects">
                 <Projects></Projects>
             </div>
 
@@ -39,12 +39,12 @@ const HomePage = () => {
             </div>
 
             {/* My Education */}
-            <div>
+            <div id="education">
                 <Education></Education>
             </div>
 
             {/* Messege Contact section of Home */}
-            <div>
+            <div id="contact">
                 <Messege></Messege>
             </div>
 

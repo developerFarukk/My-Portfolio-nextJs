@@ -18,13 +18,13 @@ const MyAchivment = () => {
                         </h2>
                     </div>
 
-                    <div className="grid grid-cols-1 mt-8 md:mt-20 gap-y-6 md:grid-cols-2 gap-x-10">
+                    <div className="grid grid-cols-1 mt-8 md:mt-20 gap-y-6 md:grid-cols-2 gap-x-10 text-white">
                         <div>
                             <Image className=" mx-auto rounded-full  sm:max-w-xs" src={img1}  alt="" />
                         </div>
 
                         <div>
-                            <h3 className="text-lg font-semibold text-green-100">Hey! I am OMAR FARUK, Work as a MERN Web Developer in Bangladesh</h3>
+                            <h3 className="text-lg font-semibold text-yellow-200">Hey! I am OMAR FARUK, Work as a MERN Web Developer in Bangladesh</h3>
                             <p className="mt-4 text-lg ">Since beginning my journey as a freelance MERN web developer nearly 3 years ago, I have done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.</p>
                             <p className="mt-4 text-lg ">As a MERN web developer, I work closely with clients to understand their needs and goals for their software or website.</p>
 
