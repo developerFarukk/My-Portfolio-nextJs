@@ -34,7 +34,7 @@ const HomePage = () => {
             </div>
 
             {/* My Achivment section */}
-            <div>
+            <div id="service">
                 <MyAchivment></MyAchivment>
             </div>
 
