@@ -7,7 +7,6 @@ const Navbar = () => {
     const nav = <>
         <li><Link href="/">Home</Link></li>
         <li><Link href="#about" >About</Link></li>
-        {/* <li><Link activeClass="active" href="about" spy={true} smooth={true} offset={-70} duration={500}>About</Link></li> */}
         <li><Link href="#skills">Skills</Link></li>
         <li><Link href="#education">Education</Link></li>
         <li><Link href="/">Experience</Link></li>

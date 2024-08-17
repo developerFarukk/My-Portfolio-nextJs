@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { SiFacebook } from "react-icons/si";
 import { FaDiscord, FaGithub, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import emailjs from '@emailjs/browser';
 import { useState, useRef } from "react";
@@ -132,7 +133,7 @@ const Message = () => {
                                                     <svg className="flex-shrink-0 text-blue-600 w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.21 0L21 8m-9 12h.01M12 19h.01M3 5h18a2 2 0 012 2v10a2 2 0 01-2 2H3a2 2 0 01-2-2V7a2 2 0 012-2z" />
                                                     </svg>
-                                                    <span className="block ml-3 text-base text-start text-gray-900">hridoycse65@gmail.com</span>
+                                                    <span className="block ml-3 text-base text-start text-gray-900">web.omarfaruk.dev@gmail.com</span>
                                                 </div>
 
                                                 <div className="flex items-start">
@@ -145,7 +146,13 @@ const Message = () => {
                                                         />
                                                     </svg>
                                                     <div className="ml-3">
-                                                        <span className="block text-base text-gray-900">+880 1516742802</span>
+                                                        <span className="block mt-1 text-base text-gray-900">+880 1917540405</span>
+                                                    </div>
+                                                </div>
+
+                                                <div className="flex items-start">
+                                                    
+                                                    <div className=" flex items-center gap-3">  <FaWhatsapp className="text-blue-700 w-8 h-8" />
                                                         <span className="block mt-1 text-base text-gray-900">+880 1917540405</span>
                                                     </div>
                                                 </div>
