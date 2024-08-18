@@ -1,6 +1,17 @@
 
 import Link from "next/link";
 
+// AOS Link setup
+// import 'animate.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// AOS.init();
+
+
+
+
+
+
 
 const Navbar = () => {
 
@@ -19,7 +30,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="navbar  fixed z-10 bg-opacity-30 max-w-screen-xl hover:bg-blue-800 text-white">
+            <div  className="navbar   fixed z-10 bg-opacity-30 max-w-screen-xl hover:bg-blue-800 text-white">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
