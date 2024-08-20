@@ -194,7 +194,7 @@ const Footer = () => {
                             <br />
 
                             Created with
-                            <a target="_blank" href="https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables" className="text-green-400  transition hover:text-white/75"> Next.js</a>
+                            <a target="_blank" href="https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables" className="text-green-400  transition hover:text-white/75"> Next.js <span>OMAR FARUK</span></a>
                         </p>
                     </div>
                 </div>
