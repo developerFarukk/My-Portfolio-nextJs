@@ -16,7 +16,7 @@
   /* background-color: #336DFF; */
   background: linear-gradient(300deg, deepskyblue, darkviolet, blue, #09021b, #1e2023);
   background-size: 300% 300%;
-  animation: gradient-animation 35s ease infinite;
+  animation: gradient-animation 10s ease infinite;
 }
 
 @keyframes gradient-animation {
@@ -38,8 +38,90 @@
 
 .pacifico-regular {
   font-family: "Pacifico", cursive;
-};
+}
+
+;
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+.akaya-regular {
+  font-family: "Akaya Kanadaka", system-ui;
+  
+}
 
 
 
 
+.menu {
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+  transition: all .35s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  &:hover {
+    color: black;
+
+    &::before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+  }
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  /* Display inline block */
+  position: relative;
+  /* Set position relative */
+  color:
+    whitesmoke;
+  /* Set text color */
+}
+
+.hover-underline-animation:after {
+  content: '';
+  /* Add content after the element */
+  position: absolute;
+  /* Position absolute for pseudo-element */
+  width: 100%;
+  /* Full width */
+  transform: scaleX(0);
+  /* Initial scale of 0 for underline effect */
+  height: 2px;
+  /* Height of the underline */
+  bottom: 0;
+  /* Align to bottom */
+  left: 0;
+  /* Align to left */
+  background-color:
+    yellow;
+  /* Background color of the underline */
+  transform-origin: bottom right;
+  /* Set transform origin */
+  transition: transform 0.25s ease-out;
+  /* Transition effect for the underline */
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  /* Scale the underline on hover */
+  transform-origin: bottom left;
+  /* Set transform origin */
+}

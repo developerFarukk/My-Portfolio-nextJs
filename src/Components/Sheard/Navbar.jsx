@@ -16,7 +16,7 @@ import Link from "next/link";
 const Navbar = () => {
 
     const nav = <>
-        <li><Link href="/">Home</Link></li>
+        <li><Link href="/" className=" hover-underline-animation">Home</Link></li>
         <li><Link href="#about" >About</Link></li>
         <li><Link href="#skills">Skills</Link></li>
         <li><Link href="#education">Education</Link></li>
@@ -27,10 +27,51 @@ const Navbar = () => {
         <li><Link href="#contact">Contact</Link></li>
     </>
 
+    const navItems = [
+        {
+            title: 'Home',
+            path: '/',
+
+        },
+        {
+            title: 'About',
+            path: '#about',
+
+        },
+        {
+            title: 'Skills',
+            path: '#skills',
+        },
+        {
+            title: 'Education',
+            path: '#education',
+        },
+        {
+            title: 'Experience',
+            path: '/',
+        },
+        {
+            title: 'Project',
+            path: '#project',
+        },
+        {
+            title: 'My Team',
+            path: '/',
+        },
+        {
+            title: 'Service',
+            path: '#service',
+        },
+        {
+            title: 'Contact',
+            path: '#contact',
+        },
+    ];
+
 
     return (
-        <div>
-            <div  className="navbar   fixed z-10 bg-opacity-30 max-w-screen-xl hover:bg-blue-800 text-white">
+        <div className="">
+            <div className="navbar   fixed z-10 bg-opacity-30 max-w-screen-xl  text-white">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -43,8 +84,18 @@ const Navbar = () => {
                     <Link href="/" className="pacifico-regular btn btn-ghost text-xl">OMAR FARUK</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 gap-2">
-                        {nav}
+                    <ul className="menu menu-horizontal px-1 gap-2 ">
+                        {/* {nav} */}
+                        {navItems?.map((navItem) => (
+                            <li key={navItem.path}>
+                                <Link
+                                    className=' font-bold akaya-regular inline-block hover-underline-animation text-[16px]'
+                                    href={navItem.path}
+                                >
+                                    {navItem.title}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div className="navbar-end">
