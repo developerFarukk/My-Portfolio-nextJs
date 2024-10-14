@@ -3,17 +3,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-// AOS Link setup
-// import 'animate.css';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-// AOS.init();
-
-
-
-
-
-
 
 const Navbar = () => {
 
@@ -78,7 +67,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="">
+        <div   className="">
             <div className={`navbar fixed z-10 max-w-screen-xl text-white transition-all duration-300 ${scrolled ? 'bg-[#112484] bg-opacity-90' : 'bg-[#090949] bg-opacity-10'
                 }`}>
                 <div className="navbar-start">
@@ -118,7 +107,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link href="/" className="btn btn-primary bg-none">Sign Up</Link>
+                    <Link href="/" className="btn btn-primary bg-none">SignIn</Link>
                 </div>
             </div>
         </div>
