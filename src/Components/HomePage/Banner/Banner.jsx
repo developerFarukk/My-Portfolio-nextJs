@@ -11,7 +11,7 @@ import { BsTwitterX } from "react-icons/bs";
 const Banner = () => {
     return (
         <div>
-            <section className="lg:mt-0 pt-20 overflow-hidden text-white  md:pt-0 sm:pt-16 2xl:pt-16">
+            <section className="lg:mt-0 pt-20 overflow-hidden text-white  md:pt-16 sm:pt-20 2xl:pt-16">
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="grid items-center justify-between grid-cols-1 md:grid-cols-2">
 

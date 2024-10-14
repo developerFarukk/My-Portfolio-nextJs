@@ -14,8 +14,8 @@ const HomePage = () => {
         <div>
 
             {/* Banner section */}
-            <div id="about" >
-                <Banner></Banner>
+            <div id="about" className="">
+                <Banner className=""></Banner>
             </div>
 
             {/* Status section  */}

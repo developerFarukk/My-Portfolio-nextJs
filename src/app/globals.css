@@ -46,7 +46,7 @@
 
 .akaya-regular {
   font-family: "Akaya Kanadaka", system-ui;
-  
+
 }
 
 
@@ -124,4 +124,15 @@
   /* Scale the underline on hover */
   transform-origin: bottom left;
   /* Set transform origin */
+}
+
+header.nav-fixed {
+  width: 100%;
+  position: fixed;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-active {
+  background-color: #fff;
+  box-shadow: 5px -1px 12px -5px grey;
 }
