@@ -108,6 +108,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <Link href="/" className="btn btn-primary bg-none">SignIn</Link>
+                    <p className="hidden">antaji</p>
                 </div>
             </div>
         </div>
