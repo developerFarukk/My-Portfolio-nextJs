@@ -90,7 +90,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="">
-                        <Link href="/" className="pacifico-regular btn rounded-full p-2 text-xl block1 ">OMAR FARUK</Link>
+                        <Link href="/" className="pacifico-regular btn  rounded-full lg:p-2 lg:text-xl block1 ">OMAR FARUK</Link>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">

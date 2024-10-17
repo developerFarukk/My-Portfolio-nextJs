@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -5,10 +7,22 @@ import bg1 from "../../../../public/My Pic.png";
 import { SiFacebook } from "react-icons/si";
 import { FaDiscord, FaGithub, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import { Typewriter } from "react-simple-typewriter";
 
 
 
 const Banner = () => {
+
+    const handleType = (count) => {
+        // access word count number
+        console.log(count)
+    }
+
+
+    const handleDone = () => {
+        console.log(`Done after 5 loops!`)
+    }
+
     return (
         <div>
             <section className="lg:mt-0 pt-20 overflow-hidden text-white  md:pt-16 sm:pt-20 2xl:pt-16">
@@ -18,7 +32,35 @@ const Banner = () => {
                         <div className="">
                             <h2 className="text-3xl font-bold leading-tight text-yellow-600  ">Hey 👋 I am <br className="block sm:hidden" /> <br />
                                 <span className="lg:text-5xl"> OMAR FARUK </span> <br />
-                                <span className="text-green-200 text-xl">MERN Stack Web Developer</span>
+                                {/* <span className="text-green-200 text-xl">MERN Stack Web Developer</span> */}
+
+                                <span style={{ paddingTop: '0rem', margin: 'auto 0', fontWeight: 'normal' }}>
+                                    {/* Life is simple{' '} */}
+                                    <span style={{ color: 'red', fontWeight: 'bold' }}>
+                                        {/* Style will be inherited from the parent element */}
+                                        <Typewriter className="text-green-200 text-xl"
+                                            words={[
+                                                'MERN Stack Web Developer',
+                                                'Web Developer',
+                                                'React Developer',
+                                                'JavaScript Developer',
+                                                'Front-End Developer',
+                                                'Backend Developer',
+                                                'Next.js Developer',
+                                                'Full Stack Developer',
+                                            ]}
+                                            loop={1000}
+                                            cursor
+                                            cursorStyle='_'
+                                            typeSpeed={200}
+                                            deleteSpeed={100}
+                                            delaySpeed={3000}
+                                            onLoopDone={handleDone}
+                                            onType={handleType}
+                                        />
+                                    </span>
+                                </span>
+
                             </h2>
                             <p className="max-w-lg mt-3 text-xl leading-relaxed  md:mt-8">I am developing a full-featured website using the MERN stack (MongoDB, Express.js, React, Node.js)
                                 to modernize and enhance user experience with a friendly, efficient, and contemporary design.</p>
@@ -101,10 +143,10 @@ const Banner = () => {
                             </div>
 
                             <div>
-                                <Link href="https://drive.google.com/file/d/1f712sf-H0d3PENlWP0m9u_I6SzdE0UhL/view?usp=sharing" 
-                                download="M_Resume.pdf"
-                                target="blank"
-                                className="btn btn-primary bg-none p-2 m-6">Download Resume</Link>
+                                <Link href="https://drive.google.com/file/d/1f712sf-H0d3PENlWP0m9u_I6SzdE0UhL/view?usp=sharing"
+                                    download="M_Resume.pdf"
+                                    target="blank"
+                                    className="btn btn-primary bg-none p-2 m-6">Download Resume</Link>
                                 <Link href="/" className="btn btn-primary bg-none p-2 m-6">Hire Me</Link>
                             </div>
 
