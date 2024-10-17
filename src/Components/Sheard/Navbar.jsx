@@ -67,7 +67,7 @@ const Navbar = () => {
 
 
     return (
-        <div   className="">
+        <div className="">
             <div className={`navbar fixed z-10 max-w-screen-xl text-white transition-all duration-300 ${scrolled ? 'bg-[#112484] bg-opacity-90' : 'bg-[#090949] bg-opacity-10'
                 }`}>
                 <div className="navbar-start">
@@ -89,7 +89,9 @@ const Navbar = () => {
                             ))}
                         </ul>
                     </div>
-                    <Link href="/" className="pacifico-regular btn btn-ghost text-xl">OMAR FARUK</Link>
+                    <div className="">
+                        <Link href="/" className="pacifico-regular btn rounded-full p-2 text-xl block1 ">OMAR FARUK</Link>
+                    </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-2 ">
@@ -108,8 +110,6 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <Link href="/" className="btn btn-primary bg-none">SignIn</Link>
-                    <p className="hidden">antaji</p>
-                    <p className="hidden">antaji kldjfg</p>
                 </div>
             </div>
         </div>
