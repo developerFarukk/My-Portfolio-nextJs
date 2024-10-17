@@ -8,6 +8,7 @@ import { SiFacebook } from "react-icons/si";
 import { FaDiscord, FaGithub, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { Typewriter } from "react-simple-typewriter";
+import { TextRevealCard } from "@/components/ui/text-reveal-card";
 
 
 
@@ -31,9 +32,19 @@ const Banner = () => {
 
                         <div className="">
                             <h2 className="text-3xl font-bold leading-tight text-yellow-600  ">Hey 👋 I am <br className="block sm:hidden" /> <br />
-                                <span className="lg:text-5xl"> OMAR FARUK </span> <br />
+                                <span className="lg:text-5xl"> OMAR FARUK </span>
+                                {/* <div className="flex items-center justify-center">
+                                    <TextRevealCard
+                                        text="OMAR FARUK"
+                                        revealText="Developer FARUK"
+                                        className='text-yellow-600'
+                                    >
+                                    </TextRevealCard>
+                                </div> */}
+                                <br />
                                 {/* <span className="text-green-200 text-xl">MERN Stack Web Developer</span> */}
 
+                                {/* Title Type Section */}
                                 <span style={{ paddingTop: '0rem', margin: 'auto 0', fontWeight: 'normal' }}>
                                     {/* Life is simple{' '} */}
                                     <span style={{ color: 'red', fontWeight: 'bold' }}>

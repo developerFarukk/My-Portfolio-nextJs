@@ -1,6 +1,6 @@
 // export const dynamic = "force-dynamic";
 
-import HomePage from "@/Components/HomePage/HomePage";
+import HomePage from "@/components/HomePage/HomePage";
 
 
 
