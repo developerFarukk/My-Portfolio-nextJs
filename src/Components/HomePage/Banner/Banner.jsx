@@ -33,6 +33,7 @@ const Banner = () => {
                         <div className="">
                             <h2 className="text-3xl font-bold leading-tight text-yellow-600  ">Hey 👋 I am <br className="block sm:hidden" /> <br />
                                 <span className="lg:text-5xl"> OMAR FARUK </span>
+                                <span className="hidden">Omar Faruk</span>
                                 {/* <div className="flex items-center justify-center">
                                     <TextRevealCard
                                         text="OMAR FARUK"
