@@ -12,7 +12,7 @@ const HoverButton = () => {
                     className=" text-black dark:text-white flex items-center"
                 >
                     {/* <AceternityLogo /> */}
-                    <span>Aceternity UI</span>
+                    <span>Download Resume</span>
                 </HoverBorderGradient>
             </div>
         </div>

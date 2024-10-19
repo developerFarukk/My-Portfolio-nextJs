@@ -4,14 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import bg1 from "../../../../public/My Pic.png";
-import { SiFacebook } from "react-icons/si";
-import { FaDiscord, FaGithub, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
 import { Typewriter } from "react-simple-typewriter";
 import { TextRevealCard } from "@/components/ui/text-reveal-card";
 import { BackgroundLines } from "@/components/ui/background-lines";
 import LinkIcon from "@/components/Sheard/LinkIcon";
 import HoverButton from "@/components/Sheard/HoverButton";
+
+import Lottie from "lottie-react";
+// import { useLottie } from "lottie-react";
+import { downloadIcon } from "../../../../public/LottifyFile/Download.json"
 
 
 
@@ -26,6 +27,13 @@ const Banner = () => {
     const handleDone = () => {
         console.log(`Done after 5 loops!`)
     }
+
+    // const options = {
+    //     animationData: downloadIcon,
+    //     loop: true
+    // };
+
+    // const { View } = useLottie(options);
 
     return (
         <div>
@@ -80,7 +88,7 @@ const Banner = () => {
                             {/* <p className="max-w-lg mt-3 text-xl leading-relaxed  md:mt-8">I am developing a full-featured website using the MERN stack (MongoDB, Express.js, React, Node.js)
                                 to modernize and enhance user experience with a friendly, efficient, and contemporary design.</p> */}
 
-                            <p className="mt-1 text-xl text-green-400  md:mt-8">
+                            <p className="mt-1 text-xl text-green-400 hover:ml-2 hover:mb-4 md:mt-8">
                                 <span className="relative inline-block">
                                     <span className="absolute inline-block w-full bottom-0.5 h-1 bg-red-700"></span>
                                     <span className="relative"> Have a question? </span>
@@ -93,14 +101,16 @@ const Banner = () => {
                                 <LinkIcon></LinkIcon>
                             </div>
 
-                            <div>
-                                <Link href="#" className="">
+                            <div className="flex gap-2 justify-center items-center">
+
+                                <div className="bg-yellow-300">
+                                    pppppp
+                                    <Lottie animationData={downloadIcon} loop={true} className="text-white" />
+                                </div>
+
+                                <Link href="https://drive.google.com/file/d/1f712sf-H0d3PENlWP0m9u_I6SzdE0UhL/view?usp=sharing" target="_blank" >
                                     <HoverButton></HoverButton>
                                 </Link>
-                                <Link href="https://drive.google.com/file/d/1f712sf-H0d3PENlWP0m9u_I6SzdE0UhL/view?usp=sharing"
-                                    download="M_Resume.pdf"
-                                    target="blank"
-                                    className="btn btn-primary bg-none p-2 m-6">Download Resume</Link>
 
                                 <Link href="/" className="btn btn-primary bg-none p-2 m-6">Hire Me</Link>
                             </div>

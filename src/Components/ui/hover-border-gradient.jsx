@@ -58,12 +58,12 @@ export function HoverBorderGradient({
             }}
             onMouseLeave={() => setHovered(false)}
             className={cn(
-                "relative flex rounded-full border-2  content-center  transition duration-100  items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-fit",
+                "relative flex rounded-full border btn content-center  transition duration-100  items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-1 decoration-clone w-fit ",
                 containerClassName
             )}
             {...props}>
             <div
-                className={cn("w-auto text-white z-10 bg-gradient-to-r from-indigo-800 wrapperbt px-4 py-2 rounded-[inherit]", className)}>
+                className={cn("w-auto text-white  z-10 bg-gradient-to-r from-indigo-800 wrapperbt px-4 py-4 rounded-[inherit]", className)}>
                 {children}
             </div>
             <motion.div

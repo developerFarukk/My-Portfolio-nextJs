@@ -24,7 +24,9 @@
   max-width: 1280px;
   margin: 0 auto;
   /* background-color: #336DFF; */
-  background: linear-gradient(300deg, deepskyblue, darkviolet, blue, #09021b, #1e2023);
+  /* background: linear-gradient(300deg, deepskyblue, darkviolet, blue, #09021b, #1e2023); */
+  background: linear-gradient(300deg, yellow, darkviolet, blue, green, #1e2023);
+  /* background: linear-gradient(300deg, yellow red green deepskyblue, #14919B, #213A57, #09021b, #1e2023); */
   /* background: linear-gradient(300deg, #1e2023, #1e2023, #1e2023, #09021b, #1e2023); */
   background-size: 300% 300%;
   animation: gradient-animation 10s ease infinite;
