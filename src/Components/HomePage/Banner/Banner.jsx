@@ -9,6 +9,7 @@ import { FaDiscord, FaGithub, FaInstagramSquare, FaLinkedin } from "react-icons/
 import { BsTwitterX } from "react-icons/bs";
 import { Typewriter } from "react-simple-typewriter";
 import { TextRevealCard } from "@/components/ui/text-reveal-card";
+import { BackgroundLines } from "@/components/ui/background-lines";
 
 
 
@@ -28,25 +29,25 @@ const Banner = () => {
         <div>
             <section className="lg:mt-0 pt-20 overflow-hidden text-white  md:pt-16 sm:pt-20 2xl:pt-16">
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-                    <div className="grid items-center justify-between grid-cols-1 md:grid-cols-2">
+                    <div className="grid container items-center text-center justify-between grid-cols-1 md:grid-cols-2 ">
 
                         <div className="">
-                            <h2 className="text-3xl font-bold leading-tight text-yellow-600  ">Hey 👋 I am <br className="block sm:hidden" /> <br />
-                                <span className="lg:text-5xl"> OMAR FARUK </span>
-                                <span className="hidden">Omar Faruk</span>
-                                {/* <div className="flex items-center justify-center">
+                            <h2 className="text-3xl font-bold leading-tight  bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text">Hey 👋 I am <br className="block sm:hidden" /> <br />
+
+                                {/* Name Section */}
+                                <div className="flex items-center justify-center">
                                     <TextRevealCard
                                         text="OMAR FARUK"
                                         revealText="Developer FARUK"
-                                        className='text-yellow-600'
+                                        className='text-yellow-600 '
                                     >
                                     </TextRevealCard>
-                                </div> */}
+                                </div>
+
                                 <br />
-                                {/* <span className="text-green-200 text-xl">MERN Stack Web Developer</span> */}
 
                                 {/* Title Type Section */}
-                                <span style={{ paddingTop: '0rem', margin: 'auto 0', fontWeight: 'normal' }}>
+                                <span style={{ paddingTop: '0', margin: '0 0', fontWeight: 'normal' }}>
                                     {/* Life is simple{' '} */}
                                     <span style={{ color: 'red', fontWeight: 'bold' }}>
                                         {/* Style will be inherited from the parent element */}
@@ -74,8 +75,8 @@ const Banner = () => {
                                 </span>
 
                             </h2>
-                            <p className="max-w-lg mt-3 text-xl leading-relaxed  md:mt-8">I am developing a full-featured website using the MERN stack (MongoDB, Express.js, React, Node.js)
-                                to modernize and enhance user experience with a friendly, efficient, and contemporary design.</p>
+                            {/* <p className="max-w-lg mt-3 text-xl leading-relaxed  md:mt-8">I am developing a full-featured website using the MERN stack (MongoDB, Express.js, React, Node.js)
+                                to modernize and enhance user experience with a friendly, efficient, and contemporary design.</p> */}
 
                             <p className="mt-4 text-xl text-green-400  md:mt-8">
                                 <span className="relative inline-block">
@@ -164,17 +165,19 @@ const Banner = () => {
 
                         </div>
 
-                        <div className="relative">
-                            <Image className="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="My Responsive Image"
-                                layout="responsive"
-                                width={500}
-                                height={300} />
+                        <div className="relative  flex items-center justify-center text-center">
 
-                            <Image className="relative w-full xl:max-w-lg  xl:mx-auto 2xl:origin-bottom 2xl:scale-110" src={bg1} alt="My Responsive Image"
-                                layout="responsive"
+                            <div>
+                                <BackgroundLines className="lg:mb-20  ">
+                                    <Image className="relative  xl:max-w-lg  xl:mx-auto 2xl:origin-bottom 2xl:scale-110" src={bg1} alt="My Responsive Image"
+                                        layout="responsive"
 
-                                width={500}
-                                height={300} />
+                                    // width={500}
+                                    // height={300}
+                                    />
+                                </BackgroundLines>
+                            </div>
+
                         </div>
 
                     </div>
