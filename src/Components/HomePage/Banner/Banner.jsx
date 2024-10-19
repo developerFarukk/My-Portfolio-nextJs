@@ -10,6 +10,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { Typewriter } from "react-simple-typewriter";
 import { TextRevealCard } from "@/components/ui/text-reveal-card";
 import { BackgroundLines } from "@/components/ui/background-lines";
+import LinkIcon from "@/components/Sheard/LinkIcon";
 
 
 
@@ -85,6 +86,12 @@ const Banner = () => {
                                 </span>
                                 <br className="block sm:hidden" /> Ask me through the <Link href="#" title="" className="transition-all duration-200 text-slate-200 hover:text-slate-50 hover:underline">Contact</Link>
                             </p>
+
+                            {/* Link Section */}
+                            <div className="p-10">
+                                <LinkIcon></LinkIcon>
+                            </div>
+
                             <div className="mt-6 flex justify-center gap-6 ">
 
                                 {/* Facebook */}
