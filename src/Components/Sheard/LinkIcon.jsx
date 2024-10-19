@@ -1,17 +1,9 @@
 import Image from "next/image";
 import { FloatingDock } from "../ui/floating-dock";
-import {
-    IconBrandGithub,
-    IconBrandX,
-    IconExchange,
-
-    IconNewSection,
-    IconTerminal2,
-} from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandX } from "@tabler/icons-react";
 import { SiFacebook } from "react-icons/si";
 import Link from "next/link";
-// import { FaDiscord, FaGithub, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
-// import { BsTwitterX } from "react-icons/bs";
+import { FaDiscord, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
 
 
 
@@ -24,57 +16,48 @@ const LinkIcon = () => {
                 <SiFacebook className="h-full w-full  hover:text-yellow-200 transition" />
             ),
             href: "https://web.facebook.com/developerfarukk",
-
         },
 
         {
-            title: "Products",
+            title: "LinkedIn",
             icon: (
-                <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <FaLinkedin className="h-full w-full  hover:text-yellow-200 transition" />
             ),
-            href: "#",
-        },
-        {
-            title: "Components",
-            icon: (
-                <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-            ),
-            href: "#",
-        },
-        {
-            title: "Aceternity UI",
-            icon: (
-                <Image
-                    src="https://assets.aceternity.com/logo-dark.png"
-                    width={20}
-                    height={20}
-                    alt="Aceternity Logo"
-                />
-            ),
-            href: "#",
-        },
-        {
-            title: "Changelog",
-            icon: (
-                <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-            ),
-            href: "#",
+            href: "https://www.linkedin.com/in/developerfaruk",
         },
 
-        {
-            title: "Twitter",
-            icon: (
-                <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-            ),
-            href: "#",
-        },
         {
             title: "GitHub",
             icon: (
-                <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconBrandGithub className="h-full w-full  hover:text-yellow-200 transition" />
             ),
-            href: "#",
+            href: "https://github.com/developerFarukk",
         },
+
+        {
+            title: "Instagram",
+            icon: (
+                <FaInstagramSquare className="h-full w-full  hover:text-yellow-200 transition" />
+            ),
+            href: "https://www.instagram.com/developer_faruk",
+        },
+
+        {
+            title: "Discord",
+            icon: (
+                <FaDiscord className="h-full w-full  hover:text-yellow-200 transition" />
+            ),
+            href: "https://discord.gg/developerfaruk",
+        },
+
+        {
+            title: "Twiter/X",
+            icon: (
+                <IconBrandX className="h-full w-full  hover:text-yellow-200 transition" />
+            ),
+            href: "https://x.com/developerfarukk",
+        },
+
     ];
 
     return (
