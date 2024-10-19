@@ -4,11 +4,12 @@ import {
     IconBrandGithub,
     IconBrandX,
     IconExchange,
-    
+
     IconNewSection,
     IconTerminal2,
 } from "@tabler/icons-react";
 import { SiFacebook } from "react-icons/si";
+import Link from "next/link";
 // import { FaDiscord, FaGithub, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
 // import { BsTwitterX } from "react-icons/bs";
 
@@ -22,10 +23,8 @@ const LinkIcon = () => {
             icon: (
                 <SiFacebook className="h-full w-full  hover:text-yellow-200 transition" />
             ),
-            href: "#",
-            target: "_blank",
-            rel: "noreferrer"
-            
+            href: "https://web.facebook.com/developerfarukk",
+
         },
 
         {

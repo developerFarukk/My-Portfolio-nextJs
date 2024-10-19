@@ -97,7 +97,7 @@ const Banner = () => {
                                 {/* Facebook */}
                                 <Link
                                     className=" transition hover:text-yellow-200"
-                                    href="https://www.facebook.com/profile.php?id=100010438080711&mibextid=ZbWKwL"
+                                    href="https://web.facebook.com/developerfarukk"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
