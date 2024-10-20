@@ -9,6 +9,7 @@ import { TextRevealCard } from "@/components/ui/text-reveal-card";
 import { BackgroundLines } from "@/components/ui/background-lines";
 import LinkIcon from "@/components/Sheard/LinkIcon";
 import HoverButton from "@/components/Sheard/HoverButton";
+import HireButton from "@/components/Sheard/HireButton";
 
 // import Lottie from "lottie-react";
 // import { useLottie } from "lottie-react";
@@ -111,7 +112,11 @@ const Banner = () => {
                                     <HoverButton></HoverButton>
                                 </Link>
 
-                                <Link href="/" className="btn btn-primary bg-none p-2 m-6">Hire Me</Link>
+                                <div>
+                                    <HireButton></HireButton>
+                                </div>
+
+                                {/* <Link href="/" className="btn btn-primary bg-none p-2 m-6">Hire Me</Link> */}
                             </div>
 
                         </div>
