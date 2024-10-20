@@ -15,7 +15,6 @@ import HireButton from "@/components/Sheard/HireButton";
 import wave from "../../../../public/wave.gif"
 import BannerLamp from "./BannerLamp";
 
-// import Lottie from "lottie-react";
 // import { useLottie } from "lottie-react";
 // import { downloadIcon } from "../../../../public/LottifyFile/Download.json"
 
