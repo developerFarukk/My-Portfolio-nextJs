@@ -83,7 +83,7 @@ export const TextRevealCard = ({
                 }
           }
           transition={isMouseOver ? { duration: 0 } : { duration: 0.4 }}
-          className="absolute text-white bg-blue-950 bg-opacity-70 rounded-3xl z-20  will-change-transform">
+          className="absolute text-white bg-blue-950 bg-opacity-90 rounded-3xl z-20  will-change-transform">
           <p
             style={{
               textShadow: "4px 4px 15px rgba(0,0,0,0.5)",

@@ -102,7 +102,7 @@ const Banner = () => {
                                 <LinkIcon></LinkIcon>
                             </div>
 
-                            <div className="flex gap-2 justify-center items-center">
+                            <div className="flex gap-2 justify-center items-center mt-2">
 
                                 {/* <div className="">
                                     {View}
