@@ -63,7 +63,7 @@ export function HoverBorderGradient({
             )}
             {...props}>
             <div
-                className={cn("w-auto text-white  z-10 bg-gradient-to-r from-indigo-800 wrapperbt px-4 py-4 rounded-[inherit]", className)}>
+                className={cn("w-auto text-white  z-10 bg-gradient-to-r from-indigo-800 wrapperbt px-4 py-2 rounded-[inherit]", className)}>
                 {children}
             </div>
             <motion.div
