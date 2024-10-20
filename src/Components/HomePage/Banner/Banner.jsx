@@ -147,8 +147,8 @@ const Banner = () => {
                                     <Image className="relative  " src={bg1} alt="My Responsive Image"
                                         layout="responsive"
 
-                                    // width={500}
-                                    // height={300}
+                                    width={300}
+                                    height={300}
                                     />
                                 </BackgroundLines>
                             </div>
