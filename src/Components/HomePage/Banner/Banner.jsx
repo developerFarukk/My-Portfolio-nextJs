@@ -11,6 +11,9 @@ import LinkIcon from "@/components/Sheard/LinkIcon";
 import HoverButton from "@/components/Sheard/HoverButton";
 import HireButton from "@/components/Sheard/HireButton";
 
+// Web Iamge
+import wave from "../../../../public/wave.gif"
+
 // import Lottie from "lottie-react";
 // import { useLottie } from "lottie-react";
 // import { downloadIcon } from "../../../../public/LottifyFile/Download.json"
@@ -43,7 +46,14 @@ const Banner = () => {
                     <div className="grid container items-center text-center justify-between grid-cols-1 md:grid-cols-2 ">
 
                         <div className="">
-                            <h2 className="text-3xl font-bold leading-tight  bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text">Hey 👋 I am <br className="block sm:hidden" /> <br />
+                            <h2 className=" text-3xl font-bold leading-tight  bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text">
+                                <div className="flex items-center justify-center gap-2">
+                                    <h2> Hey </h2>
+                                    <h2> <Image src={wave} alt="wave" height="40" className="-rotate-12 "></Image></h2>
+                                    <h2> I am </h2>
+                                </div>
+
+                                <br className="block sm:hidden" />
 
                                 {/* Name Section */}
                                 <div className="flex items-center justify-center">
@@ -54,8 +64,6 @@ const Banner = () => {
                                     >
                                     </TextRevealCard>
                                 </div>
-
-                                <br />
 
                                 {/* Title Type Section */}
                                 <span style={{ paddingTop: '0', margin: '0 0', fontWeight: 'normal' }}>
