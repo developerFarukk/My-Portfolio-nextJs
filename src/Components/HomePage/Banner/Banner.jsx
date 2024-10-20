@@ -10,9 +10,9 @@ import { BackgroundLines } from "@/components/ui/background-lines";
 import LinkIcon from "@/components/Sheard/LinkIcon";
 import HoverButton from "@/components/Sheard/HoverButton";
 
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
 // import { useLottie } from "lottie-react";
-import { downloadIcon } from "../../../../public/LottifyFile/Download.json"
+// import { downloadIcon } from "../../../../public/LottifyFile/Download.json"
 
 
 
@@ -23,11 +23,11 @@ const Banner = () => {
         console.log(count)
     }
 
-
     const handleDone = () => {
         console.log(`Done after 5 loops!`)
     }
 
+    // Lottefile Animation function
     // const options = {
     //     animationData: downloadIcon,
     //     loop: true
@@ -103,10 +103,9 @@ const Banner = () => {
 
                             <div className="flex gap-2 justify-center items-center">
 
-                                <div className="bg-yellow-300">
-                                    pppppp
-                                    <Lottie animationData={downloadIcon} loop={true} className="text-white" />
-                                </div>
+                                {/* <div className="">
+                                    {View}
+                                </div> */}
 
                                 <Link href="https://drive.google.com/file/d/1f712sf-H0d3PENlWP0m9u_I6SzdE0UhL/view?usp=sharing" target="_blank" >
                                     <HoverButton></HoverButton>
