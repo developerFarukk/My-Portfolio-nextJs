@@ -15,12 +15,12 @@ const HomePage = () => {
         <div>
 
             {/* Banner section */}
-            <div id="about" className="">
+            <div >
                 <Banner className=""></Banner>
             </div>
 
             {/* About Me Section */}
-            <div>
+            <div id="about">
                 <About></About>
             </div>
 

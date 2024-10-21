@@ -1,15 +1,23 @@
 
 
 
+import MobingBorderButton from "@/components/Sheard/MobingBorderButton";
 import Image from "next/image";
 
 
 const About = () => {
     return (
         <div>
-            <section className="py-10 sm:py-16 lg:py-24">
-                <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-                    <div className="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center">
+
+            <section className="">
+                <div className="w-[90%] px-4 mx-auto sm:px-6 lg:px-8 container border-yellow-600 border-2 shadow-lg rounded-md">
+
+                    {/* About Button */}
+                    <div>
+                        <MobingBorderButton />
+                    </div>
+
+                    <div className="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center ">
                         <h2 className="text-3xl font-bold leading-tight  sm:text-4xl lg:text-5xl lg:leading-tight">
                             I am building a product that can
                             <span className="relative inline-block">
@@ -25,15 +33,17 @@ const About = () => {
                         </div>
 
                         <div>
-                            <h3 className="text-lg font-semibold text-gray-900">Hey! I am John, founder of Celebration.</h3>
-                            <p className="mt-4 text-lg text-gray-700">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                            <p className="mt-4 text-lg text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h3 className="text-lg font-semibold ">Hey! I am John, founder of Celebration.</h3>
+                            <p className="mt-4 text-lg">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <p className="mt-4 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                            <h3 className="mt-8 text-lg font-semibold text-gray-900">How do I do this without any investment?</h3>
-                            <p className="mt-4 text-lg text-gray-700">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h3 className="mt-8 text-lg font-semibold ">How do I do this without any investment?</h3>
+                            <p className="mt-4 text-lg">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
                     </div>
+
                 </div>
+
             </section>
 
         </div>
