@@ -11,7 +11,7 @@ const MobingBorderButton = () => {
             <div className="p-2">
                 <Button
                     borderRadius="1.75rem"
-                    className="bg-gradient-to-r from-[#8ddad5] to-[#000428] "
+                    className="bg-gradient-to-r from-slate-800 to-[#000428] "
                 >
                     About Me
                 </Button>
