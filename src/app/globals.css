@@ -10,6 +10,61 @@
   margin: 0 auto;
 }
 
+/* :root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 85%;
+  --container-width-sm: 90%;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Cursor Section */
+.custom-cursor {
+  position: fixed;
+  width: 10px;
+  /* Inner black circle size */
+  height: 10px;
+  background-color: whitesmoke;
+  /* Inner circle color */
+  border: 3px solid transparent;
+  /* To avoid default border around the element */
+  border-radius: 50%;
+  /* Make it a circle */
+  pointer-events: none;
+  /* Prevent interaction with elements */
+  z-index: 99999;
+  /* Make sure it stays on top */
+  transform: translate(-50%, -50%);
+  /* Center the cursor on the mouse */
+}
+
+.custom-cursor-two {
+  position: fixed;
+  padding: 15px;
+  /* Inner circle color */
+  border: 1px solid red;
+  /* To avoid default border around the element */
+  border-radius: 50%;
+  /* Make it a circle */
+  pointer-events: none;
+  /* Prevent interaction with elements */
+  z-index: 999;
+  /* Make sure it stays on top */
+  transform: translate(-50%, -50%);
+  /* Center the cursor on the mouse */
+}
+
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
