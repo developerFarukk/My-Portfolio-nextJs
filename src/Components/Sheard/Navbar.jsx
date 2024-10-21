@@ -48,7 +48,7 @@ const Navbar = () => {
         },
         {
             title: 'Project',
-            path: '#project',
+            path: '#projects',
         },
         {
             title: 'My Team',
