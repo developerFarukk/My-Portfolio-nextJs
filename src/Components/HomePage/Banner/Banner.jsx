@@ -13,7 +13,7 @@ import HireButton from "@/components/Sheard/HireButton";
 
 // Web Iamge
 import wave from "../../../../public/wave.gif"
-import BannerLamp from "./BannerLamp";
+// import BannerLamp from "./BannerLamp";
 
 // import { useLottie } from "lottie-react";
 // import { downloadIcon } from "../../../../public/LottifyFile/Download.json"
