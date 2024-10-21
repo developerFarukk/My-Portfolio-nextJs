@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Sheard/Navbar";
 import Footer from "@/components/Sheard/Footer";
 import MouseCursor from "@/components/Sheard/MouseCursor/MouseCursor";
+import MouseCursorTwo from "@/components/Sheard/MouseCursor/MouseCursorTwo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
           <Navbar></Navbar>
           {children}
           <MouseCursor />
+          <MouseCursorTwo />
           <Footer></Footer>
         </div>
       </body>
