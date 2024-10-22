@@ -138,6 +138,13 @@ html {
   font-family: "Pacifico", cursive;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20+Charted&display=swap');
+
+.jersey-20-charted-regular {
+  font-family: "Jersey 20 Charted", sans-serif;
+  
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
 
