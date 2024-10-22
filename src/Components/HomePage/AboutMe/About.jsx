@@ -4,6 +4,7 @@
 import MobingBorderButton from "@/components/Sheard/MobingBorderButton";
 import TextEffect from "@/components/Sheard/TextEffect";
 import Image from "next/image";
+import Ab3DCard from "./Ab3DCard";
 
 const objective = `I work as a professional in the web development sector, creating full-featured websites. With years of hands-on experience, I am committed to modernizing and improving user experiences through friendly, efficient, and contemporary designs.`;
 
@@ -32,11 +33,14 @@ const About = () => {
                         </h2>
                     </div>
 
-                    <div className="grid grid-cols-1  mt-8 gap-y-6 md:grid-cols-2 gap-x-10">
+                    <div className="grid grid-cols-1   gap-y-6 md:grid-cols-2 gap-x-10 items-center ">
+
+                        {/* Image Section */}
                         <div>
-                            <Image className=" mx-auto sm:max-w-xs" width={300} height={500} src="https://cdn.rareblocks.xyz/collection/celebration/images/team/2/business-man.jpg" alt="" />
+                            <Ab3DCard></Ab3DCard>
                         </div>
 
+                        {/* Text details Section */}
                         <div className="text-sky-300 text-start">
                             <div className="text-start">
                                 <span className="relative inline-block text-xl font-bold  text-orange-700 ">
