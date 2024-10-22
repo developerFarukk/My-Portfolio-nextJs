@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="wrapper">
+        <div className="wrapper arima-font">
           <Navbar></Navbar>
           {children}
           <MouseCursor />

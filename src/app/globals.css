@@ -124,20 +124,25 @@ html {
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* ///////////////////////////    < Google Font >  //////////////////////////////////////////// */
 
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+
+.arima-font {
+  font-family: "Arima";
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 .pacifico-regular {
   font-family: "Pacifico", cursive;
 }
 
-;
 
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
 
 .akaya-regular {
-  font-family: "Akaya Kanadaka", system-ui;
-
+  font-family: "Akaya Kanadaka";
 }
 
 

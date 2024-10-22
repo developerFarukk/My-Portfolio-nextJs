@@ -95,10 +95,8 @@ const Banner = () => {
                                 </span>
 
                             </h2>
-                            {/* <p className="max-w-lg mt-3 text-xl leading-relaxed  md:mt-8">I am developing a full-featured website using the MERN stack (MongoDB, Express.js, React, Node.js)
-                                to modernize and enhance user experience with a friendly, efficient, and contemporary design.</p> */}
-
-                            <p className="mt-1 text-xl text-green-400 hover:ml-2 hover:mb-4 md:mt-8">
+                            
+                            <p className="mt-1 text-xl text-green-400 hover:ml-2 hover:mb-4 md:mt-8 arima-font">
                                 <span className="relative inline-block">
                                     <span className="absolute inline-block w-full bottom-0.5 h-1 bg-red-700"></span>
                                     <span className="relative"> Have a question? </span>
