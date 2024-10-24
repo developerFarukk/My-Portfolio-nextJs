@@ -33,8 +33,6 @@ const About = () => {
                         </h2>
                     </div>
 
-                    {/* <p>amar</p> */}
-
                     <div className="grid grid-cols-1   gap-y-6 md:grid-cols-2 gap-x-10 items-center ">
 
                         {/* Image Section */}
@@ -75,6 +73,8 @@ const About = () => {
                             Experienced Full-Stack
                         </h2>
                     </div>
+
+                    <p className="disabled">amar suerbjhdfb </p>
 
                 </div>
 
