@@ -5,6 +5,7 @@ import MobingBorderButton from "@/components/Sheard/MobingBorderButton";
 import TextEffect from "@/components/Sheard/TextEffect";
 import Image from "next/image";
 import Ab3DCard from "./Ab3DCard";
+import According from "../According/According";
 
 const objective = `I work as a professional in the web development sector, creating full-featured websites. With years of hands-on experience, I am committed to modernizing and improving user experiences through friendly, efficient, and contemporary designs.`;
 
@@ -69,13 +70,8 @@ const About = () => {
                     </div>
 
                     <div className="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center ">
-                        <h2 className="text-3xl font-bold leading-tight  sm:text-4xl lg:text-5xl lg:leading-tight">
-                            Experienced Full-Stack
-                        </h2>
+                            <According></According>
                     </div>
-
-                    <p className="disabled">amar suerbjhdfb </p>
-
                 </div>
 
             </section>

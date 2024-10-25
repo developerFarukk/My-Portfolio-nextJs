@@ -5,6 +5,7 @@ import Footer from "@/components/Sheard/Footer";
 import MouseCursor from "@/components/Sheard/MouseCursor/MouseCursor";
 import MouseCursorTwo from "@/components/Sheard/MouseCursor/MouseCursorTwo";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -17,11 +18,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="wrapper arima-font">
-          <Navbar></Navbar>
-          {children}
-          <MouseCursor />
-          <MouseCursorTwo />
-          <Footer></Footer>
+          
+            <Navbar></Navbar>
+            {children}
+            <MouseCursor />
+            <MouseCursorTwo />
+            <Footer></Footer>
+          
+
         </div>
       </body>
     </html>
