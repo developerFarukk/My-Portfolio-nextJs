@@ -8,10 +8,10 @@ const According = () => {
 
     const accordings = [
         {
-            title: <div className=""> According 1</div>,
+            title: <div className=" border-none"> According 1</div>,
             id: 1,
             ariaLable: <div className="border-none"> According 1</div>,
-            Answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            Answer: <div className="text-start ml-4"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2></div>
         },
         {
             title: 'According 2',
@@ -23,14 +23,14 @@ const According = () => {
             title: 'According 3',
             id: 3,
             ariaLable: 'According 3',
-            Answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            Answer: <div className="text-start ml-2"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2></div>
         },
     ]
 
     return (
         <div>
             <div>
-                <div className="text-start">
+                <div className="text-start p-1">
                     <span className="relative inline-block text-xl font-bold  text-orange-700 ">
                         <span className="absolute inline-block w-full h-[1px] bg-white bottom-1 "></span>
                         <span className="relative jersey-20-charted-regular "> Qustion</span>
@@ -38,13 +38,14 @@ const According = () => {
                     <span className="font-bold text-xl text-slate-100"> : </span>
                 </div>
             </div>
-            <Accordion variant="splitted" className="border-none  rounded-xl">
+
+            <Accordion variant="splitted" className="border-none text-start  ">
 
                 {
                     accordings.map((accor) => (
 
-                        <AccordionItem key={accor.id} aria-label={accor.ariaLable} title={accor.title} className="text-sky-300 font-semibold text-lg ">
-                            <span className="text-sky-600 text-start text-md"> {accor.Answer}</span>
+                        <AccordionItem key={accor.id} aria-label={accor.ariaLable} title={accor.title} className="text-sky-300 font-semibold text-lg border border-none bg-gradient-to-r from-slate-800 to-[#000428] rounded-xl">
+                            <span className="text-sky-500  text-md "> {accor.Answer}</span>
                         </AccordionItem>
                     ))
                 }

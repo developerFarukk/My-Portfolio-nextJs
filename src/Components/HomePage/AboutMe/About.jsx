@@ -25,10 +25,10 @@ const About = () => {
                     </div>
 
                     <div className="mx-auto text-center ">
-                        <h2 className="text-3xl font-bold leading-tight  sm:text-4xl lg:text-5xl lg:leading-tight text-center">
+                        <h2 className="text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl lg:leading-tight text-center">
                             I am an expert in modern
                             <span className="relative inline-block">
-                                <span className="absolute inline-block w-full h-1 bg-yellow-300 bottom-1.5 lg:ml-2 md:ml-2 "></span>
+                                <span className="absolute inline-block w-full h-1 bg-yellow-300  bottom-1.5 lg:ml-2 md:ml-2 "></span>
                                 <span className="relative lg:ml-2 md:ml-2"> web development</span>
                             </span>
                         </h2>
@@ -51,7 +51,7 @@ const About = () => {
                                 <span className="font-bold text-xl text-slate-100"> : </span>
                             </div>
 
-                            <div className="text-sky-300 text-lg ">
+                            <div className="text-sky-300 text-lg bg-gradient-to-r from-slate-800 to-[#000428] p-1  rounded-lg mt-1">
                                 <TextEffect words={objective}></TextEffect>
                             </div>
 
@@ -63,13 +63,13 @@ const About = () => {
                                 <span className="font-bold text-xl text-slate-100"> : </span>
                             </div>
 
-                            <div className="text-sky-300 text-lg ">
+                            <div className="text-sky-300 text-lg  bg-gradient-to-r from-slate-800 to-[#000428] p-1 rounded-lg mt-1">
                                 <TextEffect words={work}></TextEffect>
                             </div>
                         </div>
                     </div>
 
-                    <div className="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center ">
+                    <div className="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center lg:mt-0 mt-4 p-2">
                             <According></According>
                     </div>
                 </div>

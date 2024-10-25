@@ -6,7 +6,7 @@ import { TextGenerateEffect } from "../ui/text-generate-effect";
 const TextEffect = ( {words} ) => {
     return (
         <div>
-            <TextGenerateEffect words={words} />
+            <TextGenerateEffect words={words} className="ml-1" />
         </div>
     );
 };
