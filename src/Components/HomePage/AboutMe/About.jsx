@@ -17,7 +17,7 @@ const About = () => {
         <div>
 
             <section className="mt-6">
-                <div className="w-[90%] px-4 mx-auto sm:px-6 lg:px-8 container border-yellow-600 border-2 shadow-lg rounded-lg">
+                <div className="w-[90%] px-4 mx-auto sm:px-6 lg:px-8 container ">
 
                     {/* About Button */}
                     <div>
@@ -69,7 +69,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center lg:mt-0 mt-4 p-2">
+                    <div className="mx-auto text-left md:max-w-lg lg:max-w-3xl md:text-center lg:mt-0 mt-4 p-2">
                             <According></According>
                     </div>
                 </div>
