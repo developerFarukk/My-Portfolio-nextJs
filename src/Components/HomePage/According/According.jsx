@@ -66,7 +66,7 @@ const According = () => {
                 }
 
             </Accordion>
-            <p>jcjcjc</p>
+            <h2>amarjhdsf jsdhfbnb </h2>
 
         </div>
     );
