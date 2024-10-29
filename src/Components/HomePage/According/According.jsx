@@ -48,7 +48,7 @@ const According = () => {
                 <div className="text-start p-1">
                     <span className="relative inline-block text-xl font-bold  text-orange-700 ">
                         <span className="absolute inline-block w-full h-[1px] bg-white bottom-1 "></span>
-                        <span className="relative jersey-20-charted-regular "> Your common questions abut me</span>
+                        <span className="relative jersey-20-charted-regular "> Your common questions about me</span>
                     </span>
                     <span className="font-bold text-xl text-slate-100"> : </span>
                 </div>
@@ -66,8 +66,6 @@ const According = () => {
                 }
 
             </Accordion>
-
-            <p>amammahbdf hdfb </p>
 
         </div>
     );
