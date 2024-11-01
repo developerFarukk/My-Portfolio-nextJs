@@ -151,7 +151,7 @@ const Banner = () => {
                             </div>
 
                         </div>
-
+<p>Mar suner bangla </p>
                     </div>
                 </div>
             </section>
