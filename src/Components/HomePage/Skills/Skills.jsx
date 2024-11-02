@@ -1,3 +1,4 @@
+import MobingBorderButton from "@/components/Sheard/MobingBorderButton";
 import Image from "next/image";
 // import next from "../../../../public/next.svg"
 
@@ -5,11 +6,12 @@ import Image from "next/image";
 const Skills = () => {
     return (
         <div className="mt-12">
+
+            {/* Skills Button */}
             <div>
-                <div class="max-w-2xl mx-auto text-center">
-                    <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">My Skills</h2>
-                </div>
+                <MobingBorderButton title="My Skills" />
             </div>
+            
             <div>
                 <div className="">
                     <div className="mt-6 lg:grid justify-center items-center">

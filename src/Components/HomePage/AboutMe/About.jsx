@@ -21,7 +21,7 @@ const About = () => {
 
                     {/* About Button */}
                     <div>
-                        <MobingBorderButton />
+                        <MobingBorderButton title="About Me" />
                     </div>
 
                     <div className="mx-auto text-center ">
