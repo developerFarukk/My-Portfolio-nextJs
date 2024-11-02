@@ -41,9 +41,10 @@ const Banner = () => {
 
     return (
         <div>
+
             <section className="lg:mt-0 pt-20 lg:pt-0 overflow-hidden text-white  md:pt-16 sm:pt-20 ">
                 <div className="">
-                    <div className="grid  items-center text-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
+                    <div className="grid lg:mt-20 items-center text-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
 
                         {/* Left side section */}
                         <div className="">
@@ -95,7 +96,7 @@ const Banner = () => {
                                 </span>
 
                             </h2>
-                            
+
                             <p className="mt-1 text-xl text-green-400 hover:ml-2 hover:mb-4 md:mt-8 arima-font">
                                 <span className="relative inline-block">
                                     <span className="absolute inline-block w-full bottom-0.5 h-1 bg-red-700"></span>
@@ -136,22 +137,23 @@ const Banner = () => {
                             </div> */}
 
                             <div className="absolute ">
-                            <Image className="  opacity-70   wrapperimg rounded-full lg:p-16 md:p-12 p-8 " width={400} height={150} src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" />
+                                <Image className="  opacity-70   wrapperimg rounded-full lg:p-16 md:p-12 p-8 " width={400} height={150} src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" />
                             </div>
 
                             <div>
                                 <BackgroundLines className=" ">
-                                    <Image className="relative  " src={bg1} alt="My Responsive Image"
-                                        layout="responsive"
+                                    <div className="">
+                                        <Image className="relative  " src={bg1} alt="My Responsive Image"
+                                            height={ 500}
+                                            // width={450}
 
-                                    width={300}
-                                    height={300}
-                                    />
+                                        />
+                                    </div>
                                 </BackgroundLines>
                             </div>
 
                         </div>
-<p>Mar suner bangla </p>
+
                     </div>
                 </div>
             </section>
