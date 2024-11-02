@@ -1,6 +1,6 @@
 import MobingBorderButton from "@/components/Sheard/MobingBorderButton";
 import Image from "next/image";
-// import next from "../../../../public/next.svg"
+import html from "../../../../public/Icon/html-5.png"
 
 
 const Skills = () => {
@@ -11,7 +11,28 @@ const Skills = () => {
             <div>
                 <MobingBorderButton title="My Skills" />
             </div>
-            
+
+            {/* Card */}
+            <div className="flex gap-6 items-center justify-center">
+
+                <div
+                    className="group hover:-rotate-0 [transform:rotate3d(1_,-1,_1,_15deg)] duration-500 overflow-hidden  h-[12em] w-[12em]  border-[rgba(152,151,152,1)] rounded-[1.5em] bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] text-white font-nunito p-[1em] flex justify-center items-left flex-col  hover:shadow-yellow-700 hover:shadow-xl backdrop-filter backdrop-blur-md border border-yellow-800"
+                >
+                    <div className="p-2">
+                        <div className="avatar grid justify-center">
+                            <div className=" shadow-2xl shadow-yellow-700 rounded-3xl bg-gradient-to-r from-[#020024] via-[#090979] to-[#00d4ff] ">
+                                <Image className=" " src={html} alt="My Responsive Image" layout="responsive"  />
+
+                            </div>
+                            <p className="text-xl  font-semibold text-yellow-600 pacifico-regular">HTML</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
             <div>
                 <div className="">
                     <div className="mt-6 lg:grid justify-center items-center">
