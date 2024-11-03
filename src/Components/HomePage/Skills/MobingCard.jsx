@@ -1,5 +1,6 @@
 "use client";
 
+
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Image from "next/image";
 import html from "../../../../public/Icon/html-5.png";
