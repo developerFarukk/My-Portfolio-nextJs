@@ -1,8 +1,5 @@
 import Image from "next/image";
-import img1 from "../../../../public/Avhivment.svg"
-import img2 from "../../../../public/rating_896699.png"
-import img3 from "../../../../public/laugh-wink_11035650.png"
-import img4 from "../../../../public/project.png"
+
 
 
 

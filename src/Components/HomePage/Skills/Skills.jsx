@@ -1,5 +1,6 @@
 import MobingBorderButton from "@/components/Sheard/MobingBorderButton";
 import MobingCard from "./MobingCard";
+import GsapScroll from "./GsapScroll";
 
 
 const Skills = () => {
@@ -15,6 +16,10 @@ const Skills = () => {
             {/* skills Moviing Card */}
             <div>
                 <MobingCard></MobingCard>
+            </div>
+
+            <div>
+                <GsapScroll></GsapScroll>
             </div>
 
             {/* Card */}

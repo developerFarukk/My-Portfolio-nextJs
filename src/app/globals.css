@@ -29,6 +29,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.text-vw {
+  font-size: 10vw;
+}
+
 /* Cursor Section */
 .custom-cursor {
   position: fixed;
@@ -142,7 +146,7 @@ html {
 
 .jersey-20-charted-regular {
   font-family: "Jersey 20 Charted", sans-serif;
-  
+
 }
 
 
