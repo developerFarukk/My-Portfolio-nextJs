@@ -1,6 +1,8 @@
 import MobingBorderButton from "@/components/Sheard/MobingBorderButton";
 import MobingCard from "./MobingCard";
 import GsapScroll from "./GsapScroll";
+import Slider from "./Slider";
+import Marquee from "react-fast-marquee";
 
 
 const Skills = () => {
@@ -18,9 +20,9 @@ const Skills = () => {
                 <MobingCard></MobingCard>
             </div>
 
-            <div>
+            {/* <div>
                 <GsapScroll></GsapScroll>
-            </div>
+            </div> */}
 
             {/* Card */}
             {/* <div className="justify-center items-center text-center flex">
@@ -47,6 +49,12 @@ const Skills = () => {
                     }
                 </div>
             </div> */}
+
+            <div >
+                <Slider></Slider>
+            </div>
+
+
 
         </div>
     );

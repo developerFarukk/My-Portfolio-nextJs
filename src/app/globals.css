@@ -288,3 +288,25 @@ header.nav-fixed {
 .block1:after {
   filter: blur(50px);
 }
+
+
+.swiper {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 99%;
+  width: 99%;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* font-size: 18px; */
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}

@@ -3,6 +3,11 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
+// import 'swiper/css/pagination';
+// import 'swiper/css/autoplay';
+// import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 
 export const InfiniteMovingCards = ({
     items,
@@ -19,6 +24,7 @@ export const InfiniteMovingCards = ({
     }, []);
 
     const [start, setStart] = useState(false);
+
     function addAnimation() {
         if (containerRef.current && scrollerRef.current) {
             const scrollerContent = Array.from(scrollerRef.current.children);
@@ -35,6 +41,7 @@ export const InfiniteMovingCards = ({
             setStart(true);
         }
     }
+
     const getDirection = () => {
         if (containerRef.current) {
             if (direction === "left") {
@@ -44,6 +51,7 @@ export const InfiniteMovingCards = ({
             }
         }
     };
+
     const getSpeed = () => {
         if (containerRef.current) {
             if (speed === "fast") {
@@ -55,6 +63,7 @@ export const InfiniteMovingCards = ({
             }
         }
     };
+
     return (
         (<div
             ref={containerRef}
@@ -69,8 +78,16 @@ export const InfiniteMovingCards = ({
                     start && "animate-scroll ",
                     pauseOnHover && "hover:[animation-play-state:paused]"
                 )}>
+                    
                 {
                     items.map(sk => <>
+
+                        
+
+                           
+
+                       
+
                         <div key={sk.id}
                             className="group hover:-rotate-0 [transform:rotate3d(1_,-1,_1,_15deg)] duration-500 overflow-hidden  h-[12em] w-[12em]  border-[rgba(152,151,152,1)] rounded-[1.5em] bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] text-white font-nunito p-[1em] flex justify-center items-left flex-col  hover:shadow-yellow-700 hover:shadow-xl backdrop-filter backdrop-blur-md border border-yellow-800"
                         >
@@ -89,7 +106,10 @@ export const InfiniteMovingCards = ({
                         </div>
                     </>)
                 }
+                
+  
             </ul>
+            
         </div>)
     );
 };
