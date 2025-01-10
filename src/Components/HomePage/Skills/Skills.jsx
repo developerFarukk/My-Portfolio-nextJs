@@ -3,6 +3,7 @@ import MobingCard from "./MobingCard";
 import GsapScroll from "./GsapScroll";
 import Slider from "./Slider";
 import Marquee from "react-fast-marquee";
+import SlideMap from "./Slide/SlideMap";
 
 
 const Skills = () => {
@@ -20,7 +21,7 @@ const Skills = () => {
                 <MobingCard></MobingCard>
             </div>
 
-            {/* <div>
+            {/* <div className="relative ">
                 <GsapScroll></GsapScroll>
             </div> */}
 
@@ -52,6 +53,10 @@ const Skills = () => {
 
             <div >
                 <Slider></Slider>
+            </div>
+
+            <div>
+                <SlideMap></SlideMap>
             </div>
 
 

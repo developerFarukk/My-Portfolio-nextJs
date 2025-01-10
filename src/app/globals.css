@@ -293,8 +293,8 @@ header.nav-fixed {
 .swiper {
   margin-left: 10px;
   margin-right: 10px;
-  height: 99%;
-  width: 99%;
+  height: 100%;
+  width: 100%;
 }
 
 .swiper-slide {
@@ -310,3 +310,5 @@ header.nav-fixed {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+
