@@ -21,8 +21,6 @@
     "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
     "framer-motion": "^11.11.11",
-    "gsap": "^3.12.5",
-    "keen-slider": "^6.8.6",
     "lottie-react": "^2.4.0",
     "next": "^14.2.4",
     "react": "^18.3.1",
@@ -32,7 +30,6 @@
     "react-scroll": "^1.9.0",
     "react-simple-typewriter": "^5.0.1",
     "react-swipeable": "^7.0.2",
-    "swiper": "^11.1.14",
     "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {

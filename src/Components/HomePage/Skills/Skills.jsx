@@ -18,12 +18,8 @@ const Skills = () => {
 
             {/* skills Moviing Card */}
             <div>
-                <MobingCard></MobingCard>
+                <SlideMap></SlideMap>
             </div>
-
-            {/* <div className="relative ">
-                <GsapScroll></GsapScroll>
-            </div> */}
 
             {/* Card */}
             {/* <div className="justify-center items-center text-center flex">
@@ -50,16 +46,6 @@ const Skills = () => {
                     }
                 </div>
             </div> */}
-
-            {/* <div >
-                <Slider></Slider>
-            </div> */}
-
-            <div>
-                <SlideMap></SlideMap>
-            </div>
-
-
 
         </div>
     );

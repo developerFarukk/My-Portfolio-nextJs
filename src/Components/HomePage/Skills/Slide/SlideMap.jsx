@@ -50,13 +50,13 @@ const CustomSplide = () => {
                     breakpoints: {
                         480: { perPage: 2, gap: "0.5rem" },
                         640: { perPage: 3, gap: "0.5rem" },
-                        768: { perPage: 4, gap: "1rem" }, 
-                        960: { perPage: 5, gap: "1.5rem" }, 
-                        1280: { perPage: 6, gap: "2rem" }, 
+                        768: { perPage: 4, gap: "1rem" },
+                        960: { perPage: 5, gap: "1.5rem" },
+                        1280: { perPage: 6, gap: "2rem" },
                     },
                 }}
                 extensions={{ AutoScroll }}
-                className=""
+                className="scroller relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]"
             >
                 {
                     skillIcon.map(sk => <>
