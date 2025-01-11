@@ -1,6 +1,5 @@
 "use client";
 
-
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Image from "next/image";
 import html from "../../../../public/Icon/html-5.png";
@@ -32,6 +31,8 @@ import postman from "../../../../public/Icon/Postman.svg";
 
 
 const MobingCard = () => {
+
+
     return (
         // <div>
         //     <div className="h-[20rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden">

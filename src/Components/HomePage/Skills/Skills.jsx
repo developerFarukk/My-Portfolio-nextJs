@@ -51,9 +51,9 @@ const Skills = () => {
                 </div>
             </div> */}
 
-            <div >
+            {/* <div >
                 <Slider></Slider>
-            </div>
+            </div> */}
 
             <div>
                 <SlideMap></SlideMap>
