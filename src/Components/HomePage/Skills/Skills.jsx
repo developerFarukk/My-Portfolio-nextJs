@@ -1,7 +1,7 @@
 "use client"
 
 import MobingBorderButton from "@/components/Sheard/MobingBorderButton";
-import SlideMap from "./Slide/SlideMap";
+// import SlideMap from "./Slide/SlideMap";
 import SkillsTabs from "./Tabs/SkillsTabs";
 
 
@@ -16,13 +16,13 @@ const Skills = () => {
             </div>
 
             {/* Skills Tabs */}
-            <div className="grid items-center text-center justify-center mt-12">
+            <div className=" mt-6 justify-center items-center">
                 <SkillsTabs></SkillsTabs>
             </div>
 
             {/* skills Moviing Card */}
             <div>
-                <SlideMap></SlideMap>
+                {/* <SlideMap></SlideMap> */}
             </div>
 
             {/* Card */}
