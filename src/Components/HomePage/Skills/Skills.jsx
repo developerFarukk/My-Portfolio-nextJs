@@ -1,9 +1,8 @@
+"use client"
+
 import MobingBorderButton from "@/components/Sheard/MobingBorderButton";
-import MobingCard from "./MobingCard";
-import GsapScroll from "./GsapScroll";
-import Slider from "./Slider";
-import Marquee from "react-fast-marquee";
 import SlideMap from "./Slide/SlideMap";
+import SkillsTabs from "./Tabs/SkillsTabs";
 
 
 const Skills = () => {
@@ -14,6 +13,11 @@ const Skills = () => {
             {/* Skills Button */}
             <div>
                 <MobingBorderButton title="My Skills" />
+            </div>
+
+            {/* Skills Tabs */}
+            <div className="grid items-center text-center justify-center mt-12">
+                <SkillsTabs></SkillsTabs>
             </div>
 
             {/* skills Moviing Card */}
