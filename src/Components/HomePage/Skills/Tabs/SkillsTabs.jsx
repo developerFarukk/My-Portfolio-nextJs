@@ -10,6 +10,7 @@ import {
 } from "@material-tailwind/react";
 import AllSkills from "../Slide/AllSkills";
 import FrontEndSkills from "../Slide/FrontEndSkills";
+import BackendSkills from "../Slide/BackendSkills";
 
 const SkillsTabs = () => {
 
@@ -27,9 +28,7 @@ const SkillsTabs = () => {
         {
             label: "Backend",
             value: "Backend",
-            desc: `We're not always in the position that we want to be at.
-          We're constantly growing. We're constantly making mistakes. We're
-          constantly trying to express ourselves and actualize our dreams.`,
+            desc: <BackendSkills />,
         },
         {
             label: "Angular",

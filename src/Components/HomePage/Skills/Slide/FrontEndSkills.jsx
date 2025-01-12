@@ -18,16 +18,7 @@ import canva from "../../../../../public/Icon/Canva.svg";
 import figma from "../../../../../public/Icon/Figma.svg";
 import wordpress from "../../../../../public/Icon/WordPress.svg";
 
-// import mongoDB from "../../../../../public/Icon/MongoDB.svg";
-// import Express from "../../../../../public/Icon/Express.svg";
-// import node from "../../../../../public/Icon/Node.js.svg";
-// import firebase from "../../../../../public/Icon/Firebase.svg";
-// import googleCloud from "../../../../../public/Icon/Google Cloud.svg";
-// import json from "../../../../../public/Icon/JSON.svg";
-// import npm from "../../../../../public/Icon/NPM.svg";
-// import postman from "../../../../../public/Icon/Postman.svg";
-// import axios from "../../../../../public/Icon/Axios.svg";
-// import eslint from "../../../../../public/Icon/ESLint.svg";
+
 
 // import git from "../../../../../public/Icon/Git.svg";
 // import github from "../../../../../public/Icon/GitHub.svg";
