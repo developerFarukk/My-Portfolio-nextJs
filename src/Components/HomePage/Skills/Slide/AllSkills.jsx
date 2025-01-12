@@ -32,7 +32,7 @@ import "@splidejs/splide/css";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
-const CustomSplide = () => {
+const AllSkills = () => {
     return (
         <div className="">
             <Splide
@@ -56,7 +56,7 @@ const CustomSplide = () => {
                     },
                 }}
                 extensions={{ AutoScroll }}
-                className="scroller relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]"
+                className="scroller relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] "
             >
                 {
                     skillIcon.map(sk => <>
@@ -76,16 +76,18 @@ const CustomSplide = () => {
                                     </div>
                                 </div>
 
+
                             </div>
                         </SplideSlide>
                     </>)
                 }
-            </Splide>
-        </div>
+                <div div className="divider divider-horizontal divider-warning pt-12 pb-12 flex justify-center items-center text-center mr-14">🌟</div>
+            </Splide >
+        </div >
     );
 };
 
-export default CustomSplide;
+export default AllSkills;
 
 
 

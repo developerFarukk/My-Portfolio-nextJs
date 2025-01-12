@@ -8,8 +8,8 @@ import {
     Tab,
     TabPanel,
 } from "@material-tailwind/react";
-
-import SlideMap from "../Slide/SlideMap";
+import AllSkills from "../Slide/AllSkills";
+import FrontEndSkills from "../Slide/FrontEndSkills";
 
 const SkillsTabs = () => {
 
@@ -17,13 +17,12 @@ const SkillsTabs = () => {
         {
             label: "All",
             value: "All",
-            desc: <SlideMap />
+            desc: <AllSkills />
         },
         {
             label: "Front-end",
             value: "Front-end",
-            desc: `Because it's about motivating the doers. Because I'm here
-          to follow my dreams and inspire other people to follow their dreams, too.`,
+            desc: <FrontEndSkills />,
         },
         {
             label: "Backend",
