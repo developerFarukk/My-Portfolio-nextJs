@@ -11,6 +11,7 @@ import {
 import AllSkills from "../Slide/AllSkills";
 import FrontEndSkills from "../Slide/FrontEndSkills";
 import BackendSkills from "../Slide/BackendSkills";
+import UiSkills from "../Slide/UiSkills";
 
 const SkillsTabs = () => {
 
@@ -31,9 +32,9 @@ const SkillsTabs = () => {
             desc: <BackendSkills />,
         },
         {
-            label: "Angular",
-            value: "angular",
-            desc: "amar"
+            label: "UI Tools",
+            value: "UI Tools",
+            desc: <UiSkills />
         },
         {
             label: "Svelte",
