@@ -30,7 +30,8 @@ const FrontEndSkills = () => {
                         perPage: 6,
                         gap: "1rem",
                         autoScroll: {
-                            speed: 1,
+                            speed: 0.3,
+                            interval: 3000,
                         },
                         pagination: false,
                         arrows: false,
@@ -43,11 +44,11 @@ const FrontEndSkills = () => {
                         },
                     }}
                     extensions={{ AutoScroll }}
-                    className="scroller relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] "
+                    className="scroller scroll-container relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] "
                 >
                     {
                         skillIcon.map(sk => <>
-                            <SplideSlide key={sk.id} className="h-60 grid justify-center items-center lg:grid-cols-6 md:grid-cols-4 grid-cols-3 cursor-grabbing ...">
+                            <SplideSlide key={sk.id} className="h-60 croll-content scroll-m-5 grid justify-center items-center lg:grid-cols-6 md:grid-cols-4 grid-cols-3 cursor-grabbing ...">
                                 <div
                                     className="group hover:-rotate-0 [transform:rotate3d(1_,-1,_1,_15deg)] duration-500 overflow-hidden  h-[10em] w-[10em]  border-[rgba(152,151,152,1)] rounded-[1.5em] bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] text-white font-nunito p-[1em] flex justify-center items-left flex-col  hover:shadow-yellow-700 hover:shadow-xl backdrop-filter backdrop-blur-md border border-yellow-800"
                                 >
@@ -92,47 +93,47 @@ const skillIcon = [
     },
     {
         title: 'JavaScript',
-        id: 2,
+        id: 3,
         icon: <div className="p-6 rounded-xl"><Image className="rounded-xl " src={js} alt="My Responsive Image" layout="responsive" /></div>
     },
     {
         title: 'TypeScript',
-        id: 2,
+        id: 4,
         icon: <div className="p-6"><Image className=" " src={ts} alt="My Responsive Image" layout="responsive" /></div>
     },
     {
         title: 'Tailwind',
-        id: 2,
+        id: 5,
         icon: <div className="p-6"><Image className=" " src={tailwind} alt="My Responsive Image" layout="responsive" /></div>
     },
     {
         title: 'Bootstrap',
-        id: 2,
+        id: 6,
         icon: <div className="p-6"><Image className=" " src={bootstrap} alt="My Responsive Image" layout="responsive" /></div>
     },
     {
         title: 'React',
-        id: 2,
+        id: 7,
         icon: <div className="p-6"><Image className=" " src={react} alt="My Responsive Image" layout="responsive" /></div>
     },
     {
         title: 'Next',
-        id: 2,
+        id: 8,
         icon: <div className="p-6"><Image className=" " src={next} alt="My Responsive Image" layout="responsive" /></div>
     },
     {
         title: 'Canva',
-        id: 2,
+        id: 9,
         icon: <div className="p-6"><Image className=" " src={canva} alt="My Responsive Image" layout="responsive" /></div>
     },
     {
         title: 'Figma',
-        id: 2,
+        id: 10,
         icon: <div className="p-6"><Image className=" " src={figma} alt="My Responsive Image" layout="responsive" /></div>
     },
     {
         title: 'WordPress',
-        id: 2,
+        id: 11,
         icon: <div className="p-6"><Image className=" " src={wordpress} alt="My Responsive Image" layout="responsive" /></div>
     },
     

@@ -31,36 +31,171 @@ import postman from "../../../../../public/Icon/Postman.svg";
 import "@splidejs/splide/css";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { useMemo } from "react";
 
 const AllSkills = () => {
+
+    const skillIcon = useMemo(() => [
+        {
+            title: 'HTML',
+            id: 1,
+            icon: <div className="p-1"><Image className=" " src={html} alt="My Responsive Image" layout="responsive" /></div>
+
+        },
+        {
+            title: 'CSS',
+            id: 2,
+            icon: <div className="p-4"><Image className=" " src={css} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'JavaScript',
+            id: 3,
+            icon: <div className="p-6 rounded-xl"><Image className="rounded-xl " src={js} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'TypeScript',
+            id: 4,
+            icon: <div className="p-6"><Image className=" " src={ts} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'Tailwind',
+            id: 5,
+            icon: <div className="p-6"><Image className=" " src={tailwind} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'Bootstrap',
+            id: 6,
+            icon: <div className="p-6"><Image className=" " src={bootstrap} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'React',
+            id: 7,
+            icon: <div className="p-6"><Image className=" " src={react} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'MongoDB',
+            id: 8,
+            icon: <div className="p-6"><Image className=" " src={mongoDB} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'Express',
+            id: 9,
+            icon: <div className="p-6"><Image className=" " src={Express} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'Node',
+            id: 10,
+            icon: <div className="p-6"><Image className=" " src={node} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'Next',
+            id: 11,
+            icon: <div className="p-6"><Image className=" " src={next} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'Firebase',
+            id: 12,
+            icon: <div className="p-6"><Image className=" " src={firebase} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'Axios',
+            id: 13,
+            icon: <div className="p-6"><Image className=" " src={axios} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'Eslint',
+            id: 14,
+            icon: <div className="p-6"><Image className=" " src={eslint} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'Canva',
+            id: 15,
+            icon: <div className="p-6"><Image className=" " src={canva} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'Figma',
+            id: 16,
+            icon: <div className="p-6"><Image className=" " src={figma} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'Git',
+            id: 17,
+            icon: <div className="p-6"><Image className=" " src={git} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'GitHub',
+            id: 18,
+            icon: <div className="p-6"><Image className=" " src={github} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'Google Cloud',
+            id: 19,
+            icon: <div className="p-6"><Image className=" " src={googleCloud} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'JSON',
+            id: 20,
+            icon: <div className="p-6"><Image className=" " src={json} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'NPM',
+            id: 21,
+            icon: <div className="p-6"><Image className=" " src={npm} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'Vercel',
+            id: 22,
+            icon: <div className="p-6"><Image className=" " src={vercel} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'VS Code',
+            id: 23,
+            icon: <div className="p-6"><Image className=" " src={vscode} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'WordPress',
+            id: 24,
+            icon: <div className="p-6"><Image className=" " src={wordpress} alt="My Responsive Image" layout="responsive" /></div>
+        },
+        {
+            title: 'Postman',
+            id: 25,
+            icon: <div className="p-6"><Image className=" " src={postman} alt="My Responsive Image" layout="responsive" /></div>
+        },
+    ], []);
+
+    const splideOptions = useMemo(() => ({
+        type: "loop",
+        drag: "free",
+        focus: "center",
+        perPage: 6,
+        gap: "1rem",
+        autoScroll: {
+            speed: 0.3,
+            interval: 3000,
+        },
+        pagination: false,
+        arrows: false,
+        breakpoints: {
+            480: { perPage: 2, gap: "0.5rem" },
+            640: { perPage: 3, gap: "0.5rem" },
+            768: { perPage: 4, gap: "1rem" },
+            960: { perPage: 5, gap: "1.5rem" },
+            1280: { perPage: 6, gap: "2rem" },
+        },
+    }), []);
+
+
     return (
         <div className="">
             <Splide
-                options={{
-                    type: "loop",
-                    drag: "free",
-                    focus: "center",
-                    perPage: 6,
-                    gap: "1rem",
-                    autoScroll: {
-                        speed: 1,
-                    },
-                    pagination: false,
-                    arrows: false,
-                    breakpoints: {
-                        480: { perPage: 2, gap: "0.5rem" },
-                        640: { perPage: 3, gap: "0.5rem" },
-                        768: { perPage: 4, gap: "1rem" },
-                        960: { perPage: 5, gap: "1.5rem" },
-                        1280: { perPage: 6, gap: "2rem" },
-                    },
-                }}
+                options={splideOptions}
                 extensions={{ AutoScroll }}
-                className="scroller relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] "
+                className="scroller scroll-container relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] "
             >
                 {
                     skillIcon.map(sk => <>
-                        <SplideSlide key={sk.id} className="h-60 grid justify-center items-center lg:grid-cols-6 md:grid-cols-4 grid-cols-3 cursor-grabbing ...">
+                        <SplideSlide key={sk.id} className="croll-content h-60 grid justify-center items-center lg:grid-cols-6 md:grid-cols-4 grid-cols-3 cursor-grabbing ...">
                             <div
                                 className="group hover:-rotate-0 [transform:rotate3d(1_,-1,_1,_15deg)] duration-500 overflow-hidden  h-[10em] w-[10em]  border-[rgba(152,151,152,1)] rounded-[1.5em] bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] text-white font-nunito p-[1em] flex justify-center items-left flex-col  hover:shadow-yellow-700 hover:shadow-xl backdrop-filter backdrop-blur-md border border-yellow-800"
                             >
@@ -91,134 +226,263 @@ export default AllSkills;
 
 
 
-const skillIcon = [
-    {
-        title: 'HTML',
-        id: 1,
-        icon: <div className="p-1"><Image className=" " src={html} alt="My Responsive Image" layout="responsive" /></div>
+// const skillIcon = [
+//     {
+//         title: 'HTML',
+//         id: 1,
+//         icon: <div className="p-1"><Image className=" " src={html} alt="My Responsive Image" layout="responsive" /></div>
 
-    },
-    {
-        title: 'CSS',
-        id: 2,
-        icon: <div className="p-4"><Image className=" " src={css} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'JavaScript',
-        id: 2,
-        icon: <div className="p-6 rounded-xl"><Image className="rounded-xl " src={js} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'TypeScript',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={ts} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'Tailwind',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={tailwind} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'Bootstrap',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={bootstrap} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'React',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={react} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'MongoDB',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={mongoDB} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'Express',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={Express} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'Node',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={node} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'Next',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={next} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'Firebase',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={firebase} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'Axios',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={axios} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'Eslint',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={eslint} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'Canva',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={canva} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'Figma',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={figma} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'Git',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={git} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'GitHub',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={github} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'Google Cloud',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={googleCloud} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'JSON',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={json} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'NPM',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={npm} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'Vercel',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={vercel} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'VS Code',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={vscode} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'WordPress',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={wordpress} alt="My Responsive Image" layout="responsive" /></div>
-    },
-    {
-        title: 'Postman',
-        id: 2,
-        icon: <div className="p-6"><Image className=" " src={postman} alt="My Responsive Image" layout="responsive" /></div>
-    },
-];
+//     },
+//     {
+//         title: 'CSS',
+//         id: 2,
+//         icon: <div className="p-4"><Image className=" " src={css} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'JavaScript',
+//         id: 3,
+//         icon: <div className="p-6 rounded-xl"><Image className="rounded-xl " src={js} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'TypeScript',
+//         id: 4,
+//         icon: <div className="p-6"><Image className=" " src={ts} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Tailwind',
+//         id: 5,
+//         icon: <div className="p-6"><Image className=" " src={tailwind} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Bootstrap',
+//         id: 6,
+//         icon: <div className="p-6"><Image className=" " src={bootstrap} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'React',
+//         id: 7,
+//         icon: <div className="p-6"><Image className=" " src={react} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'MongoDB',
+//         id: 8,
+//         icon: <div className="p-6"><Image className=" " src={mongoDB} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Express',
+//         id: 9,
+//         icon: <div className="p-6"><Image className=" " src={Express} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Node',
+//         id: 10,
+//         icon: <div className="p-6"><Image className=" " src={node} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Next',
+//         id: 11,
+//         icon: <div className="p-6"><Image className=" " src={next} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Firebase',
+//         id: 12,
+//         icon: <div className="p-6"><Image className=" " src={firebase} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Axios',
+//         id: 13,
+//         icon: <div className="p-6"><Image className=" " src={axios} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Eslint',
+//         id: 14,
+//         icon: <div className="p-6"><Image className=" " src={eslint} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Canva',
+//         id: 15,
+//         icon: <div className="p-6"><Image className=" " src={canva} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Figma',
+//         id: 16,
+//         icon: <div className="p-6"><Image className=" " src={figma} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Git',
+//         id: 17,
+//         icon: <div className="p-6"><Image className=" " src={git} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'GitHub',
+//         id: 18,
+//         icon: <div className="p-6"><Image className=" " src={github} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Google Cloud',
+//         id: 19,
+//         icon: <div className="p-6"><Image className=" " src={googleCloud} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'JSON',
+//         id: 20,
+//         icon: <div className="p-6"><Image className=" " src={json} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'NPM',
+//         id: 21,
+//         icon: <div className="p-6"><Image className=" " src={npm} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Vercel',
+//         id: 22,
+//         icon: <div className="p-6"><Image className=" " src={vercel} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'VS Code',
+//         id: 23,
+//         icon: <div className="p-6"><Image className=" " src={vscode} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'WordPress',
+//         id: 24,
+//         icon: <div className="p-6"><Image className=" " src={wordpress} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Postman',
+//         id: 25,
+//         icon: <div className="p-6"><Image className=" " src={postman} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+// ];
 
+
+// const skillIcon = useMemo(() => [
+//     {
+//         title: 'HTML',
+//         id: 1,
+//         icon: <div className="p-1"><Image className=" " src={html} alt="My Responsive Image" layout="responsive" /></div>
+
+//     },
+//     {
+//         title: 'CSS',
+//         id: 2,
+//         icon: <div className="p-4"><Image className=" " src={css} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'JavaScript',
+//         id: 3,
+//         icon: <div className="p-6 rounded-xl"><Image className="rounded-xl " src={js} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'TypeScript',
+//         id: 4,
+//         icon: <div className="p-6"><Image className=" " src={ts} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Tailwind',
+//         id: 5,
+//         icon: <div className="p-6"><Image className=" " src={tailwind} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Bootstrap',
+//         id: 6,
+//         icon: <div className="p-6"><Image className=" " src={bootstrap} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'React',
+//         id: 7,
+//         icon: <div className="p-6"><Image className=" " src={react} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'MongoDB',
+//         id: 8,
+//         icon: <div className="p-6"><Image className=" " src={mongoDB} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Express',
+//         id: 9,
+//         icon: <div className="p-6"><Image className=" " src={Express} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Node',
+//         id: 10,
+//         icon: <div className="p-6"><Image className=" " src={node} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Next',
+//         id: 11,
+//         icon: <div className="p-6"><Image className=" " src={next} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Firebase',
+//         id: 12,
+//         icon: <div className="p-6"><Image className=" " src={firebase} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Axios',
+//         id: 13,
+//         icon: <div className="p-6"><Image className=" " src={axios} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Eslint',
+//         id: 14,
+//         icon: <div className="p-6"><Image className=" " src={eslint} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Canva',
+//         id: 15,
+//         icon: <div className="p-6"><Image className=" " src={canva} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Figma',
+//         id: 16,
+//         icon: <div className="p-6"><Image className=" " src={figma} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Git',
+//         id: 17,
+//         icon: <div className="p-6"><Image className=" " src={git} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'GitHub',
+//         id: 18,
+//         icon: <div className="p-6"><Image className=" " src={github} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Google Cloud',
+//         id: 19,
+//         icon: <div className="p-6"><Image className=" " src={googleCloud} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'JSON',
+//         id: 20,
+//         icon: <div className="p-6"><Image className=" " src={json} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'NPM',
+//         id: 21,
+//         icon: <div className="p-6"><Image className=" " src={npm} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Vercel',
+//         id: 22,
+//         icon: <div className="p-6"><Image className=" " src={vercel} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'VS Code',
+//         id: 23,
+//         icon: <div className="p-6"><Image className=" " src={vscode} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'WordPress',
+//         id: 24,
+//         icon: <div className="p-6"><Image className=" " src={wordpress} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+//     {
+//         title: 'Postman',
+//         id: 25,
+//         icon: <div className="p-6"><Image className=" " src={postman} alt="My Responsive Image" layout="responsive" /></div>
+//     },
+// ], []);
 
 

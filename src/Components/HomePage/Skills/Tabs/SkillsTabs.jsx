@@ -33,8 +33,7 @@ const SkillsTabs = () => {
         {
             label: "Angular",
             value: "angular",
-            desc: `Because it's about motivating the doers. Because I'm here
-          to follow my dreams and inspire other people to follow their dreams, too.`,
+            desc: "amar"
         },
         {
             label: "Svelte",

@@ -290,33 +290,24 @@ header.nav-fixed {
 }
 
 
-.swiper {
-  margin-left: 10px;
-  margin-right: 10px;
-  height: 100%;
-  width: 100%;
+/* Scrolling Css */
+
+@keyframes auto-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
-.swiper-slide {
-  text-align: center;
-  /* font-size: 18px; */
-  /* background: #fff; */
-
-  /* Center slide text vertically */
+.scroll-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  overflow: hidden;
 }
 
-
-/* Keen Slider  */
-
-/* [class^="number-slide"],
-[class*=" number-slide"] {
-  max-height: 100vh;
-} */
-
-
+.scroll-content {
+  display: flex;
+  animation: auto-scroll 0.3s linear infinite; /* Adjust speed here */
+}
