@@ -9,7 +9,7 @@ import ProjectsCard from "./ProjectCard/ProjectsCard";
 
 const Projects = () => {
     return (
-        <div className="mt-8">
+        <div className="mt-1">
 
             {/*Project Title Button */}
             <div>
@@ -17,8 +17,13 @@ const Projects = () => {
             </div>
 
             {/* Project Card */}
-            <div>
-                <ProjectsCard></ProjectsCard>
+            <div >
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 justify-center items-center lg:p-2 p-4 mt-4">
+                    <div><ProjectsCard></ProjectsCard></div>
+                    <div><ProjectsCard></ProjectsCard></div>
+                    <div><ProjectsCard></ProjectsCard></div>
+                    <div><ProjectsCard></ProjectsCard></div>
+                </div>
             </div>
 
             <div className="p-4 gap-4 justify-center items-center text-center mt-6 grid lg:grid-cols-3 md:grid-cols-2">
