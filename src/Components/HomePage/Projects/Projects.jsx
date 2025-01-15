@@ -3,16 +3,18 @@ import medicare from "../../../../public/MediCare/Medicare.png"
 import properit from "../../../../public/ProperIt/Properit.png"
 import Art from "../../../../public/ArtAndCraft/Art.png"
 import Link from "next/link";
+import MobingBorderButton from "@/components/Sheard/MobingBorderButton";
 
 
 const Projects = () => {
     return (
-        <div className="mt-12">
+        <div className="mt-8">
+
+            {/*Project Title Button */}
             <div>
-                <div class="max-w-2xl mx-auto text-center">
-                    <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">My recent Projects</h2>
-                </div>
+                <MobingBorderButton title="My Projects" />
             </div>
+
 
             <div className="p-4 gap-4 justify-center items-center text-center mt-6 grid lg:grid-cols-3 md:grid-cols-2">
 
