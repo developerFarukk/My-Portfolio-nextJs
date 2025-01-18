@@ -311,3 +311,9 @@ header.nav-fixed {
   display: flex;
   animation: auto-scroll 0.3s linear infinite; /* Adjust speed here */
 }
+
+.text-rgb {
+  background: linear-gradient(to right, #00c6ff, #0072ff, #00f260);
+  background-clip: text;
+  color: transparent;
+}
