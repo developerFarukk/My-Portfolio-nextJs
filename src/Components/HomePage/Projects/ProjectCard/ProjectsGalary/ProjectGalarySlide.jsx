@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { CardItem } from "@/components/ui/3d-card";
 import { useState } from "react";
 import ProjectsGalary from "./ProjectsGalary";
+import PreviewButton from "../PreviewButton";
 
 const ProjectGalarySlide = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -31,6 +32,9 @@ const ProjectGalarySlide = () => {
                     className="max-h-72 flex justify-start items-start object-cover rounded-xl group-hover/card:shadow-xl"
                     alt="thumbnail"
                 />
+                {/* <div className="mt-2">
+                    <PreviewButton title="See Details"></PreviewButton>
+                </div> */}
             </CardItem>
 
             {/* Dialog */}
