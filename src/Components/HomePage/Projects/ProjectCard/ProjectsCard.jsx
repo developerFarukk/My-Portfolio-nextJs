@@ -7,6 +7,7 @@ import React from "react";
 import Link from "next/link";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import ProjectGalarySlide from "./ProjectsGalary/ProjectGalarySlide";
+import PreviewButton from "./PreviewButton";
 // import ProjectsGalary from "./ProjectsGalary/ProjectsGalary";
 
 
@@ -28,43 +29,44 @@ const ProjectsCard = () => {
                     <CardItem
                         as="p"
                         translateZ="60"
-                        className="justify-start items-center flex text-base max-w-sm mb-4 text-fuchsia-600 font-medium"
+                        className="justify-start items-center flex text-base max-w-sm mb-4 text-fuchsia-500 font-medium"
                     >
                         As a Multivandor Website
                     </CardItem>
 
                     {/* Project Image */}
-                    {/* <CardItem translateZ="100" className="w-auto mt-2">
-                        <ProjectGalarySlide></ProjectGalarySlide>
-                        <Image
-                            src={medicare}
-                            height="1000"
-                            width="1000"
-                            className="max-h-72 flex justify-start items-start object-cover rounded-xl group-hover/card:shadow-xl"
-                            alt="thumbnail"
-                        />
-                    </CardItem> */}
                     <div>
                         <ProjectGalarySlide></ProjectGalarySlide>
                     </div>
 
-                    <div className="flex justify-between items-center mt-6">
+                    <div className="flex justify-center items-center mt-6 gap-2">
                         <CardItem
                             translateZ={20}
                             as={Link}
-                            href="http://localhost:3000"
+                            href="https://medicare-2059.web.app"
                             target="__blank"
-                            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                            className=""
                         >
-                            Try now →
+                            <PreviewButton title="Live Preview"></PreviewButton>
                         </CardItem>
-                        <CardItem
-                            translateZ={20}
-                            as="button"
-                            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-                        >
-                            Sign up
-                        </CardItem>
+                            <CardItem
+                                translateZ={20}
+                                as={Link}
+                                href="https://github.com/developerfarukk/mediCare-Client"
+                                target="__blank"
+                                className=""
+                            >
+                                <PreviewButton title="GitHub Client"></PreviewButton>
+                            </CardItem>
+                            <CardItem
+                                translateZ={20}
+                                as={Link}
+                                href="https://github.com/developerfarukk/mediCare-Server"
+                                target="__blank"
+                                className=""
+                            >
+                                <PreviewButton title="GitHub Server"></PreviewButton>
+                            </CardItem>
                     </div>
                 </CardBody>
             </CardContainer>

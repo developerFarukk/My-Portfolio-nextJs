@@ -1,52 +1,4 @@
 
-// "use client"
-
-
-// import Image from "next/image";
-// import medicare from "../../../../../../public/MediCare/Medicare-home.jpeg"
-// import { Description, Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
-// import { CardItem } from "@/components/ui/3d-card";
-// import { useState } from "react";
-
-// const ProjectGalarySlide = () => {
-
-//     let [isOpen, setIsOpen] = useState(false)
-
-//     return (
-//         <>
-//             <CardItem translateZ="100" className="w-auto mt-2" onClick={() => setIsOpen(true)}>
-//                 <Image
-//                     src={medicare}
-//                     height="1000"
-//                     width="1000"
-//                     className="max-h-72 flex justify-start items-start object-cover rounded-xl group-hover/card:shadow-xl"
-//                     alt="thumbnail"
-//                 />
-//             </CardItem>
-
-//             {/* <button onClick={() => setIsOpen(true)}>Open dialog</button> */}
-//             <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
-//                 <div className="fixed inset-0 bg-black/30 backdrop-blur-sm"></div>
-
-//                 <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
-//                     <DialogPanel className="max-w-lg space-y-4 border bg-white p-12">
-//                         <DialogTitle className="font-bold">Deactivate account</DialogTitle>
-//                         <Description>This will permanently deactivate your account</Description>
-//                         <p>Are you sure you want to deactivate your account? All of your data will be permanently removed.</p>
-//                         <div className="flex gap-4">
-//                             <button onClick={() => setIsOpen(false)}>Cancel</button>
-//                             <button onClick={() => setIsOpen(false)}>Deactivate</button>
-//                         </div>
-//                     </DialogPanel>
-//                 </div>
-//             </Dialog>
-
-//         </>
-//     );
-// };
-
-// export default ProjectGalarySlide;
-
 
 "use client";
 
@@ -56,6 +8,7 @@ import { Dialog, DialogPanel, DialogTitle, Description } from "@headlessui/react
 import { motion } from "framer-motion";
 import { CardItem } from "@/components/ui/3d-card";
 import { useState } from "react";
+import ProjectsGalary from "./ProjectsGalary";
 
 const ProjectGalarySlide = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -96,6 +49,7 @@ const ProjectGalarySlide = () => {
                     >
                         <DialogPanel className="max-w-lg space-y-4 border bg-white p-8 rounded-lg shadow-lg">
                             <DialogTitle className="font-bold text-lg">Deactivate Account</DialogTitle>
+                            <ProjectsGalary></ProjectsGalary>
                             <Description className="text-gray-600">
                                 This will permanently deactivate your account.
                             </Description>
