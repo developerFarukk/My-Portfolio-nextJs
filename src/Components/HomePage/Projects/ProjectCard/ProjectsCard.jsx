@@ -2,9 +2,11 @@
 "use client";
 
 import Image from "next/image";
+import medicare from "../../../../../public/MediCare/Medicare-home.jpeg"
 import React from "react";
 import Link from "next/link";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+// import ProjectsGalary from "./ProjectsGalary/ProjectsGalary";
 
 
 const ProjectsCard = () => {
@@ -12,28 +14,35 @@ const ProjectsCard = () => {
         <div>
             <CardContainer className="inter-var group">
                 <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[24rem] h-auto rounded-xl p-6 border shadow-[0px_0px_30px_1px_rgba(204,0,255,0.3)]  group-hover:shadow-[0px_0px_30px_1px_rgba(60,88,255,0.8)] hover:border-yellow-800 transition-all duration-3000">
+
+                    {/* Title */}
                     <CardItem
                         translateZ="50"
                         className="text-rgb text-2xl font-bold "
                     >
                         MediCare
                     </CardItem>
+
+                    {/* Title Description */}
                     <CardItem
                         as="p"
                         translateZ="60"
                         className="justify-start items-center flex text-base max-w-sm mb-4 text-fuchsia-600 font-medium"
                     >
-                        Hover over this card to 
+                        As a Multivandor Website
                     </CardItem>
+
+                    {/* Project Image */}
                     <CardItem translateZ="100" className="w-full mt-2">
                         <Image
-                            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src={medicare}
                             height="1000"
                             width="1000"
-                            className="h-auto w-auto object-cover rounded-xl group-hover/card:shadow-xl"
+                            className="max-h-72 flex justify-start items-start object-cover rounded-xl group-hover/card:shadow-xl"
                             alt="thumbnail"
                         />
                     </CardItem>
+
                     <div className="flex justify-between items-center mt-6">
                         <CardItem
                             translateZ={20}
