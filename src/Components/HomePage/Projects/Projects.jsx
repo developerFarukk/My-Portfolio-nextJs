@@ -5,7 +5,7 @@ import Art from "../../../../public/ArtAndCraft/Art.png"
 import Link from "next/link";
 import MobingBorderButton from "@/components/Sheard/MobingBorderButton";
 import ProjectsCard from "./ProjectCard/ProjectsCard";
-import ProjectsGalary from "./ProjectCard/ProjectsGalary/ProjectsGalary";
+// import ProjectsGalary from "./ProjectCard/ProjectsGalary/ProjectsGalary";
 
 
 const Projects = () => {
@@ -27,7 +27,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            <ProjectsGalary></ProjectsGalary>
+            {/* <ProjectsGalary></ProjectsGalary> */}
 
             <div className="p-4 gap-4 justify-center items-center text-center mt-6 grid lg:grid-cols-3 md:grid-cols-2">
 

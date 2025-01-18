@@ -34,16 +34,19 @@ const ProjectsCard = () => {
                     </CardItem>
 
                     {/* Project Image */}
-                    <CardItem translateZ="100" className="w-auto mt-2">
+                    {/* <CardItem translateZ="100" className="w-auto mt-2">
                         <ProjectGalarySlide></ProjectGalarySlide>
-                        {/* <Image
+                        <Image
                             src={medicare}
                             height="1000"
                             width="1000"
                             className="max-h-72 flex justify-start items-start object-cover rounded-xl group-hover/card:shadow-xl"
                             alt="thumbnail"
-                        /> */}
-                    </CardItem>
+                        />
+                    </CardItem> */}
+                    <div>
+                        <ProjectGalarySlide></ProjectGalarySlide>
+                    </div>
 
                     <div className="flex justify-between items-center mt-6">
                         <CardItem

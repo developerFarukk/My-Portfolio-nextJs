@@ -1,9 +1,21 @@
-import Image from "next/image";
+"use client"
 
 
+// import Image from "next/image";
+
+// import { animate, motion, useMotionValue, useTransform } from "motion/react"
+// import { useEffect } from "react"
 
 
 const State = () => {
+
+    // const count = useMotionValue(0)
+    // const rounded = useTransform(() => Math.round(count.get()))
+
+    // useEffect(() => {
+    //     const controls = animate(count, 100, { duration: 5 })
+    //     return () => controls.stop()
+    // }, [])
 
     const state = [
         {
@@ -35,6 +47,9 @@ const State = () => {
     return (
         <div>
             <section className="">
+                {/* <div>
+                    <motion.pre >{rounded}</motion.pre>
+                </div> */}
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 ">
 
                     <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6 mx-auto mt-8 text-center md:max-w-5xl sm:grid-cols-3 md:gap-8 sm:mt-16 ">

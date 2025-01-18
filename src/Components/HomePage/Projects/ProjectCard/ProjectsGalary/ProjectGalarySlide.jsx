@@ -1,25 +1,76 @@
 
-"use client"
+// "use client"
 
-import { Button, Dialog, DialogHeader, DialogBody, DialogFooter, Avatar, IconButton, Typography, Card } from "@material-tailwind/react";
+
+// import Image from "next/image";
+// import medicare from "../../../../../../public/MediCare/Medicare-home.jpeg"
+// import { Description, Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
+// import { CardItem } from "@/components/ui/3d-card";
+// import { useState } from "react";
+
+// const ProjectGalarySlide = () => {
+
+//     let [isOpen, setIsOpen] = useState(false)
+
+//     return (
+//         <>
+//             <CardItem translateZ="100" className="w-auto mt-2" onClick={() => setIsOpen(true)}>
+//                 <Image
+//                     src={medicare}
+//                     height="1000"
+//                     width="1000"
+//                     className="max-h-72 flex justify-start items-start object-cover rounded-xl group-hover/card:shadow-xl"
+//                     alt="thumbnail"
+//                 />
+//             </CardItem>
+
+//             {/* <button onClick={() => setIsOpen(true)}>Open dialog</button> */}
+//             <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
+//                 <div className="fixed inset-0 bg-black/30 backdrop-blur-sm"></div>
+
+//                 <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
+//                     <DialogPanel className="max-w-lg space-y-4 border bg-white p-12">
+//                         <DialogTitle className="font-bold">Deactivate account</DialogTitle>
+//                         <Description>This will permanently deactivate your account</Description>
+//                         <p>Are you sure you want to deactivate your account? All of your data will be permanently removed.</p>
+//                         <div className="flex gap-4">
+//                             <button onClick={() => setIsOpen(false)}>Cancel</button>
+//                             <button onClick={() => setIsOpen(false)}>Deactivate</button>
+//                         </div>
+//                     </DialogPanel>
+//                 </div>
+//             </Dialog>
+
+//         </>
+//     );
+// };
+
+// export default ProjectGalarySlide;
+
+
+"use client";
+
 import Image from "next/image";
-import React from "react";
-import medicare from "../../../../../../public/MediCare/Medicare-home.jpeg"
+import medicare from "../../../../../../public/MediCare/Medicare-home.jpeg";
+import { Dialog, DialogPanel, DialogTitle, Description } from "@headlessui/react";
+import { motion } from "framer-motion";
+import { CardItem } from "@/components/ui/3d-card";
+import { useState } from "react";
 
 const ProjectGalarySlide = () => {
+    const [isOpen, setIsOpen] = useState(false);
 
-    const [open, setOpen] = React.useState(false);
-    const [isFavorite, setIsFavorite] = React.useState(false);
-
-    const handleOpen = () => setOpen((cur) => !cur);
-    const handleIsFavorite = () => setIsFavorite((cur) => !cur);
+    // Animation Variants
+    const dialogVariants = {
+        hidden: { opacity: 0, scale: 0.9 },
+        visible: { opacity: 1, scale: 1 },
+        exit: { opacity: 0, scale: 0.9 },
+    };
 
     return (
         <>
-            <Card
-                className=""
-                onClick={handleOpen}
-            >
+            {/* Image Card */}
+            <CardItem translateZ="100" className="w-auto mt-2" onClick={() => setIsOpen(true)}>
                 <Image
                     src={medicare}
                     height="1000"
@@ -27,83 +78,47 @@ const ProjectGalarySlide = () => {
                     className="max-h-72 flex justify-start items-start object-cover rounded-xl group-hover/card:shadow-xl"
                     alt="thumbnail"
                 />
-            </Card>
-            <Dialog size="xl" open={open} handler={handleOpen}>
-                {/* <DialogHeader className="justify-between">
-                    <div className="flex items-center gap-3">
-                        <Avatar
-                            size="sm"
-                            variant="circular"
-                            alt="tania andrew"
-                            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-                        />
-                        <div className="-mt-px flex flex-col">
-                            <Typography
-                                variant="small"
-                                color="blue-gray"
-                                className="font-medium"
-                            >
-                                Tania Andrew
-                            </Typography>
-                            <Typography
-                                variant="small"
-                                color="gray"
-                                className="text-xs font-normal"
-                            >
-                                @emmaroberts
-                            </Typography>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <IconButton
-                            variant="text"
-                            size="sm"
-                            color={isFavorite ? "red" : "blue-gray"}
-                            onClick={handleIsFavorite}
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                className="h-5 w-5"
-                            >
-                                <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-                            </svg>
-                        </IconButton>
-                        <Button color="gray" size="sm">
-                            Free Download
-                        </Button>
-                    </div>
-                </DialogHeader> */}
-                <DialogBody>
-                    <Image
-                        alt="nature"
-                        className="h-[48rem] w-full rounded-lg object-cover object-center"
-                        src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2717&q=80"
-                        height={1000}
-                        width={1000}
-                    />
-                </DialogBody>
-                {/* <DialogFooter className="justify-between">
-                    <div className="flex items-center gap-16">
-                        <div>
-                            <Typography variant="small" color="gray" className="font-normal">
-                                Views
-                            </Typography>
-                            <Typography color="blue-gray" className="font-medium">
-                                44,082,044
-                            </Typography>
-                        </div>
-                    </div>
-                    <Button
-                        size="sm"
-                        variant="outlined"
-                        color="blue-gray"
-                        className="mr-5 flex items-center"
+            </CardItem>
+
+            {/* Dialog */}
+            <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
+                {/* Background Overlay */}
+                <div className="fixed inset-0 bg-black/30 backdrop-blur-sm transition-opacity duration-300"></div>
+
+                {/* Animated Dialog Panel */}
+                <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
+                    <motion.div
+                        variants={dialogVariants}
+                        initial="hidden"
+                        animate="visible"
+                        exit="exit"
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                        Share
-                    </Button>
-                </DialogFooter> */}
+                        <DialogPanel className="max-w-lg space-y-4 border bg-white p-8 rounded-lg shadow-lg">
+                            <DialogTitle className="font-bold text-lg">Deactivate Account</DialogTitle>
+                            <Description className="text-gray-600">
+                                This will permanently deactivate your account.
+                            </Description>
+                            <p className="text-gray-700">
+                                Are you sure you want to deactivate your account? All of your data will be permanently removed.
+                            </p>
+                            <div className="flex gap-4">
+                                <button
+                                    onClick={() => setIsOpen(false)}
+                                    className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-md"
+                                >
+                                    Cancel
+                                </button>
+                                <button
+                                    onClick={() => setIsOpen(false)}
+                                    className="px-4 py-2 bg-red-600 text-white hover:bg-red-700 rounded-md"
+                                >
+                                    Deactivate
+                                </button>
+                            </div>
+                        </DialogPanel>
+                    </motion.div>
+                </div>
             </Dialog>
         </>
     );
