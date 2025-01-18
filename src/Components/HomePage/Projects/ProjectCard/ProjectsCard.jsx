@@ -6,6 +6,7 @@ import medicare from "../../../../../public/MediCare/Medicare-home.jpeg"
 import React from "react";
 import Link from "next/link";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import ProjectGalarySlide from "./ProjectsGalary/ProjectGalarySlide";
 // import ProjectsGalary from "./ProjectsGalary/ProjectsGalary";
 
 
@@ -33,14 +34,15 @@ const ProjectsCard = () => {
                     </CardItem>
 
                     {/* Project Image */}
-                    <CardItem translateZ="100" className="w-full mt-2">
-                        <Image
+                    <CardItem translateZ="100" className="w-auto mt-2">
+                        <ProjectGalarySlide></ProjectGalarySlide>
+                        {/* <Image
                             src={medicare}
                             height="1000"
                             width="1000"
                             className="max-h-72 flex justify-start items-start object-cover rounded-xl group-hover/card:shadow-xl"
                             alt="thumbnail"
-                        />
+                        /> */}
                     </CardItem>
 
                     <div className="flex justify-between items-center mt-6">
