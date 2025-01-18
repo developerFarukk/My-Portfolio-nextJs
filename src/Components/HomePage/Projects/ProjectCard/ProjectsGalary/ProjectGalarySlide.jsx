@@ -24,7 +24,15 @@ const ProjectGalarySlide = () => {
     return (
         <>
             {/* Image Card */}
-            <CardItem translateZ="100" className="w-auto mt-2" onClick={() => setIsOpen(true)}>
+            <CardItem translateZ="100" className="w-auto mt-2 relative group" onClick={() => setIsOpen(true)}>
+                {/* <Image
+                    src={medicare}
+                    height="1000"
+                    width="1000"
+                    className="max-h-72 flex justify-start items-start object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                /> */}
+
                 <Image
                     src={medicare}
                     height="1000"
@@ -32,9 +40,11 @@ const ProjectGalarySlide = () => {
                     className="max-h-72 flex justify-start items-start object-cover rounded-xl group-hover/card:shadow-xl"
                     alt="thumbnail"
                 />
-                {/* <div className="mt-2">
-                    <PreviewButton title="See Details"></PreviewButton>
-                </div> */}
+                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <PreviewButton title="See Details..."></PreviewButton>
+                </div>
+
+                
             </CardItem>
 
             {/* Dialog */}
@@ -53,7 +63,11 @@ const ProjectGalarySlide = () => {
                     >
                         <DialogPanel className="max-w-lg space-y-4 border bg-white p-8 rounded-lg shadow-lg">
                             <DialogTitle className="font-bold text-lg">Deactivate Account</DialogTitle>
+
+
                             <ProjectsGalary></ProjectsGalary>
+
+
                             <Description className="text-gray-600">
                                 This will permanently deactivate your account.
                             </Description>
