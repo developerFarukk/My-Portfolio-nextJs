@@ -39,6 +39,21 @@ const ProjectsCard = () => {
                         <ProjectGalarySlide></ProjectGalarySlide>
                     </div>
 
+                    {/* Skills of Card */}
+                    <CardItem
+                        as="p"
+                        translateZ="60"
+                        className="justify-start text-start  text-base max-w-sm mb-4 text-fuchsia-500 font-medium mt-3" >
+                        <div className="flex text-center">Technologies Used :</div>
+                        <div className="flex gap-2 p-2">
+                            <div className="badge badge-primary">JavaScript</div>
+                            <div className="badge badge-primary">MongoDB</div>
+                            <div className="badge badge-primary">Express</div>
+                            <div className="badge badge-primary">Node</div>
+                        </div>
+
+                    </CardItem>
+
                     <div className="flex justify-center items-center mt-6 gap-2">
                         <CardItem
                             translateZ={20}
@@ -49,26 +64,26 @@ const ProjectsCard = () => {
                         >
                             <PreviewButton title="Live Preview"></PreviewButton>
                         </CardItem>
-                            <CardItem
-                                translateZ={20}
-                                as={Link}
-                                href="https://github.com/developerfarukk/mediCare-Client"
-                                target="__blank"
-                                className=""
-                            >
-                                <PreviewButton title="GitHub Client"></PreviewButton>
-                            </CardItem>
-                            <CardItem
-                                translateZ={20}
-                                as={Link}
-                                href="https://github.com/developerfarukk/mediCare-Server"
-                                target="__blank"
-                                className=""
-                            >
-                                <PreviewButton title="GitHub Server"></PreviewButton>
-                            </CardItem>
+                        <CardItem
+                            translateZ={20}
+                            as={Link}
+                            href="https://github.com/developerfarukk/mediCare-Client"
+                            target="__blank"
+                            className=""
+                        >
+                            <PreviewButton title="GitHub Client"></PreviewButton>
+                        </CardItem>
+                        <CardItem
+                            translateZ={20}
+                            as={Link}
+                            href="https://github.com/developerfarukk/mediCare-Server"
+                            target="__blank"
+                            className=""
+                        >
+                            <PreviewButton title="GitHub Server"></PreviewButton>
+                        </CardItem>
                     </div>
-                    
+
                 </CardBody>
             </CardContainer>
         </div>
