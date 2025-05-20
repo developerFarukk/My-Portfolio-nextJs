@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -109,7 +110,17 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link href="/" className="btn btn-primary bg-none">SignIn</Link>
+                    <div className="sm:order-last sm:shrink-0">
+                        <Link href="/">
+                            <Image
+                                alt=""
+                                src="https://res.cloudinary.com/dmolqac67/image/upload/v1747737822/bg_dwy0g0.png"
+                                className="size-16 rounded-full  border-2 border-blue-800 object-cover sm:size-[40px]"
+                                height={50}
+                                width={50}
+                            />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
