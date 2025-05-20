@@ -1,5 +1,6 @@
 import Image from "next/image";
 import img1 from "../../../../public/My Img.png"
+import MobingBorderButton from "@/components/Sheard/MobingBorderButton";
 
 
 
@@ -8,19 +9,25 @@ const MyAchivment = () => {
         <div>
             <section className="py-10 sm:py-16 lg:py-24">
                 <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-                    <div className="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center">
-                        <h2 className="text-3xl font-bold leading-tight text-center text-white sm:text-4xl lg:text-5xl lg:leading-tight">My 
+
+                    {/* <div className="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center">
+                        <h2 className="text-3xl font-bold leading-tight text-center text-white sm:text-4xl lg:text-5xl lg:leading-tight">My
                             <span className="relative inline-block">
                                 <span className="absolute inline-block w-full h-1 bg-yellow-300 bottom-1"></span>
                                 <span className="relative ml-3">web development  </span>
                             </span>
-                           <span className="ml-3"> activities</span>
+                            <span className="ml-3"> activities</span>
                         </h2>
+                    </div> */}
+
+                    {/*Project Title Button */}
+                    <div>
+                        <MobingBorderButton title="My Activities" />
                     </div>
 
                     <div className="grid grid-cols-1 mt-8 md:mt-20 gap-y-6 md:grid-cols-2 gap-x-10 text-white">
                         <div>
-                            <Image className=" mx-auto rounded-full  sm:max-w-xs" src={img1}  alt="" />
+                            <Image className=" mx-auto rounded-full  sm:max-w-xs" src={img1} alt="" />
                         </div>
 
                         <div>
