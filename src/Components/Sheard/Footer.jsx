@@ -24,7 +24,7 @@ const Footer = () => {
                                 <label className="sr-only" htmlFor="email"> Email </label>
 
                                 <input
-                                    className="w-full rounded-full border-gray-200 bg-gray-100 p-4 pe-32 text-sm font-medium"
+                                    className="w-full rounded-full border-gray-200  p-4 pe-32 text-sm font-medium"
                                     id="email"
                                     type="email"
                                     placeholder="portfolio@gmail.com"
@@ -189,7 +189,7 @@ const Footer = () => {
 
                     <div className="mt-16 border-t border-gray-100 pt-8">
                         <p className="text-center text-xs/relaxed ">
-                            © Copyright 2024. All rights reserved.
+                            © Copyright 2025. All rights reserved.
 
                             <br />
 
