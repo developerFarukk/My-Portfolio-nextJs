@@ -1,3 +1,5 @@
+'use client'
+
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import download from "../../../public/download.gif"
 import Image from "next/image";
@@ -5,6 +7,24 @@ import Image from "next/image";
 
 
 const HoverButton = () => {
+
+    const handleDownload = () => {
+
+        const fileUrl = "/resume.pdf";
+        const fileName = "resume";
+
+
+        const link = document.createElement("a");
+        link.href = fileUrl;
+        link.download = fileName;
+
+        document.body.appendChild(link);
+        link.click();
+
+
+        document.body.removeChild(link);
+    };
+
     return (
         <div>
             <div className=" flex justify-center text-center">
@@ -12,6 +32,7 @@ const HoverButton = () => {
                     containerClassName="rounded-full"
                     as="button"
                     className=" text-black dark:text-white flex items-center"
+                    onClick={handleDownload}
                 >
                     <div className="">
                         <Image src={download} alt="download" height={30} className="">

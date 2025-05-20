@@ -288,12 +288,14 @@ const Banner = () => {
                             </div>
 
                             <div className="flex gap-2 justify-center items-center mt-2">
-                                <Link
+                                {/* <Link
                                     href="https://drive.google.com/file/d/1f712sf-H0d3PENlWP0m9u_I6SzdE0UhL/view?usp=sharing"
                                     target="_blank"
                                 >
                                     <HoverButton></HoverButton>
-                                </Link>
+                                </Link> */}
+
+                                <HoverButton></HoverButton>
 
                                 <div>
                                     <HireButton></HireButton>
