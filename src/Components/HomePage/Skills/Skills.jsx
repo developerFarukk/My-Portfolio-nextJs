@@ -1,10 +1,18 @@
-"use client"
+// "use client"
 
 import MobingBorderButton from "@/components/Sheard/MobingBorderButton";
 import SkillsTabs from "./Tabs/SkillsTabs";
+import { getAllSkills } from "@/service/skillService";
 
 
-const Skills = () => {
+
+const Skills = async () => {
+
+    const skillsData = await getAllSkills();
+
+    const data = skillsData?.data;
+
+    console.log("skills data", data);
 
     return (
         <div className="mt-12">
@@ -16,7 +24,7 @@ const Skills = () => {
 
             {/* Skills Tabs */}
             <div className=" mt-6 justify-center items-center">
-                <SkillsTabs></SkillsTabs>
+                <SkillsTabs skillData={data} />
             </div>
 
             {/* Card */}

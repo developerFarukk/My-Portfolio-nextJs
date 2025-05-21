@@ -13,13 +13,25 @@ import FrontEndSkills from "../Slide/FrontEndSkills";
 import BackendSkills from "../Slide/BackendSkills";
 import UiSkills from "../Slide/UiSkills";
 
-const SkillsTabs = () => {
+
+const SkillsTabs =  (skillData) => {
+    
 
     const data = [
         {
             label: "All",
             value: "All",
-            desc: <AllSkills />
+            desc: <AllSkills datas={skillData} />,
+        },
+        {
+            label: "Technical",
+            value: "Technical",
+            desc: <FrontEndSkills />
+        },
+        {
+            label: "Soft",
+            value: "Soft",
+            desc: <BackendSkills />
         },
         {
             label: "Front-end",
@@ -36,13 +48,7 @@ const SkillsTabs = () => {
             value: "UI Tools",
             desc: <UiSkills />
         },
-        {
-            label: "Svelte",
-            value: "svelte",
-            desc: `We're not always in the position that we want to be at.
-          We're constantly growing. We're constantly making mistakes. We're
-          constantly trying to express ourselves and actualize our dreams.`,
-        },
+        
     ];
 
     return (
