@@ -1,9 +1,14 @@
+"use client"
 
+import ContentPriview from "./contentPriview";
 
-const BlogCard = () => {
+const BlogCard = (blogs) => {
+    const blo = blogs?.blogs
+    // console.log(blo);
+
     return (
         <div>
-            <div className="group relative w-[380px]">
+            <div className="group relative w-[380px] hover:border-2 border-yellow-900 rounded-2xl">
                 <div
                     className="relative overflow-hidden rounded-2xl bg-slate-950 shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-indigo-500/10"
                 >
@@ -31,14 +36,18 @@ const BlogCard = () => {
 
                         <div className="mt-4 space-y-2">
                             <h3 className="text-xl font-semibold text-white">
-                                Outstanding Experience!
+                                {blo?.title}
                             </h3>
-                            <p className="text-slate-400 text-start">
-                                The attention to detail and premium quality exceeded my expectations.
-                                The customer service was exceptional, and the product arrived earlier
-                                than expected. I am thoroughly impressed with every aspect of my
-                                purchase...
-                            </p>
+                            {/* <p className="text-slate-400 text-start">
+                                {blo?.content}
+                            </p> */}
+                            {/* <p
+                                className="text-slate-400 text-start"
+                                dangerouslySetInnerHTML={{ __html: blo?.content || '' }}
+                            /> */}
+                            <div>
+                                <ContentPriview content={blo} />
+                            </div>
                         </div>
 
                         <div className="mt-6 flex items-center gap-4">
@@ -73,16 +82,17 @@ const BlogCard = () => {
                                         stroke="currentColor"
                                         viewBox="0 0 24 24"
                                         fill="none"
-                                        className="h-4 w-4 text-indigo-500"
+                                        className="h-8 w-8 text-indigo-500"
+                                        aria-hidden="true"
                                     >
                                         <path
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                                            stroke-width="2"
-                                            stroke-linejoin="round"
-                                            stroke-linecap="round"
-                                        ></path>
+                                            strokeWidth="2"
+                                            strokeLinejoin="round"
+                                            strokeLinecap="round"
+                                        />
                                     </svg>
-                                    <span className="text-xs font-medium text-indigo-500">Verified</span>
+                                    <span className="text-md font-medium text-indigo-500">View</span>
                                 </div>
                             </div>
                         </div>
