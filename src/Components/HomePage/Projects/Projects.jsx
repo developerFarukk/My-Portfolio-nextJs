@@ -14,7 +14,7 @@ const Projects = async () => {
 
     const allData = projectData?.data;
 
-    console.log("skills data", allData);
+    // console.log("skills data", allData);
 
     return (
         <div className="mt-1">
@@ -44,7 +44,7 @@ const Projects = async () => {
 
                                             {/* Title Description */}
                                             <CardItem
-                                                as="p"
+                                                as="div"
                                                 translateZ="60"
                                                 className="justify-start items-center flex text-base max-w-sm mb-4 text-fuchsia-500 font-medium"
                                             >
@@ -58,7 +58,7 @@ const Projects = async () => {
 
                                             {/* Skills of Card */}
                                             <CardItem
-                                                as="p"
+                                                as="div"
                                                 translateZ="60"
                                                 className="justify-start text-start  text-base max-w-sm mb-4 text-fuchsia-500 font-medium mt-3" >
                                                 <div className="flex text-center">Technologies Used :</div>

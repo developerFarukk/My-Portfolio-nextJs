@@ -1,5 +1,6 @@
 import About from "./AboutMe/About";
 import Banner from "./Banner/Banner";
+import Blogs from "./Blogs/Blogs";
 import MyAchivment from "./MyAchiv/MyAchivment";
 import Education from "./MyEducation/Education";
 import Projects from "./Projects/Projects";
@@ -37,6 +38,11 @@ const HomePage = () => {
             {/* My Recent Project */}
             <div id="projects">
                 <Projects></Projects>
+            </div>
+
+            {/* Blogs */}
+            <div id="blogs">
+                <Blogs />
             </div>
 
             {/* My Achivment section */}
