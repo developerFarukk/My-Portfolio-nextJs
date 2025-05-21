@@ -11,8 +11,11 @@ import { useState } from "react";
 import ProjectsGalary from "./ProjectsGalary";
 import PreviewButton from "../PreviewButton";
 
-const ProjectGalarySlide = () => {
+const ProjectGalarySlide = (images) => {
     const [isOpen, setIsOpen] = useState(false);
+
+    // console.log(images?.images);
+    
 
     // Animation Variants
     const dialogVariants = {
@@ -30,7 +33,7 @@ const ProjectGalarySlide = () => {
                 onClick={() => setIsOpen(true)}
             >
                 <Image
-                    src={medicare}
+                    src={images?.images}
                     height="1000"
                     width="1000"
                     className="max-h-72 flex justify-start items-start object-cover rounded-xl group-hover/card:shadow-xl"

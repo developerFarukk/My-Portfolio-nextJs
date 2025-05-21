@@ -21,12 +21,12 @@ const SkillsTabs =  (skillData) => {
         {
             label: "All",
             value: "All",
-            desc: <AllSkills datas={skillData} />,
+            desc: <FrontEndSkills />
         },
         {
             label: "Technical",
             value: "Technical",
-            desc: <FrontEndSkills />
+            desc: <AllSkills datas={skillData} />,
         },
         {
             label: "Soft",

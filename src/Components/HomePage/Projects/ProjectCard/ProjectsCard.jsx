@@ -11,7 +11,9 @@ import PreviewButton from "./PreviewButton";
 // import ProjectsGalary from "./ProjectsGalary/ProjectsGalary";
 
 
-const ProjectsCard = () => {
+const ProjectsCard = ( ) => {
+
+
     return (
         <div>
             <CardContainer className="inter-var group">

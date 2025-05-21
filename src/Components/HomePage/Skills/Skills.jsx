@@ -12,7 +12,7 @@ const Skills = async () => {
 
     const data = skillsData?.data;
 
-    console.log("skills data", data);
+    // console.log("skills data", data);
 
     return (
         <div className="mt-12">
