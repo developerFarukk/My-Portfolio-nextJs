@@ -30,11 +30,11 @@ const Navbar = () => {
             path: '/',
 
         },
-        {
-            title: 'About',
-            path: '#about',
+        // {
+        //     title: 'About',
+        //     path: '#about',
 
-        },
+        // },
         {
             title: 'Skills',
             path: '#skills',
@@ -69,7 +69,7 @@ const Navbar = () => {
 
     return (
         <div className="">
-            <div className={`navbar fixed z-50 max-w-screen-xl text-white transition-all duration-300 ${scrolled ? 'bg-[#112484] bg-opacity-90' : 'bg-[#090949] bg-opacity-10'
+            <div className={`navbar fixed z-50  text-white transition-all duration-300 ${scrolled ? 'bg-[#112484] bg-opacity-90' : 'bg-[#090949] bg-opacity-10'
                 }`}>
                 <div className="navbar-start">
                     <div className="dropdown">

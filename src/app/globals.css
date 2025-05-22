@@ -70,7 +70,7 @@ html {
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: full;
   margin: 0 auto;
   /* background-color: #336DFF; */
   /* background: linear-gradient(300deg, deepskyblue, darkviolet, blue, #09021b, #1e2023); */
@@ -93,7 +93,7 @@ html {
 }
 
 .wrapperbt {
-  max-width: 1280px;
+  max-width: full;
   margin: 0 auto;
   /* background-color: #336DFF; */
   /* background: linear-gradient(300deg, deepskyblue, darkviolet, blue, #09021b, #1e2023); */
@@ -105,7 +105,7 @@ html {
 }
 
 .wrapperhire {
-  max-width: 1280px;
+  max-width: full;
   margin: 0 auto;
   /* background-color: #336DFF; */
   /* background: linear-gradient(300deg, deepskyblue, darkviolet, blue, #09021b, #1e2023); */
