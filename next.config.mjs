@@ -19,7 +19,10 @@ const nextConfig = {
             '@': new URL('./src', import.meta.url).pathname,
         };
         return config;
-    }
+    },
+    compiler: {
+        styledComponents: true,
+    },
 
 };
 
