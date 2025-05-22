@@ -4,9 +4,10 @@ import Blogs from "./Blogs/Blogs";
 import MyAchivment from "./MyAchiv/MyAchivment";
 import Education from "./MyEducation/Education";
 import Projects from "./Projects/Projects";
-import Messege from "./SendMessege/Messege";
+import Message from "./SendMessege/Messege";
 import Skills from "./Skills/Skills";
 import State from "./StateSection/State";
+
 
 
 
@@ -57,7 +58,7 @@ const HomePage = () => {
 
             {/* Messege Contact section of Home */}
             <div id="contact">
-                <Messege></Messege>
+                <Message />
             </div>
 
         </div>

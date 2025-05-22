@@ -1,9 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Sheard/Navbar";
 import Footer from "@/components/Sheard/Footer";
 import MouseCursor from "@/components/Sheard/MouseCursor/MouseCursor";
 import MouseCursorTwo from "@/components/Sheard/MouseCursor/MouseCursorTwo";
+import Navbar from "@/components/Sheard/Navbar";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="wrapper arima-font">
           
-            <Navbar></Navbar>
+            <Navbar />
             {children}
             <MouseCursor />
             <MouseCursorTwo />
