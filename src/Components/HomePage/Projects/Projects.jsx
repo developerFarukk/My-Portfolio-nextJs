@@ -53,7 +53,7 @@ const Projects = async () => {
 
                                             {/* Project Image */}
                                             <div>
-                                                <ProjectGalarySlide images={pro?.image} />
+                                                <ProjectGalarySlide project={pro} />
                                             </div>
 
                                             {/* Skills of Card */}
