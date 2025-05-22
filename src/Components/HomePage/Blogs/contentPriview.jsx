@@ -36,7 +36,7 @@ const ContentPriview = (content) => {
                 </p>
 
                 {needsTruncation(blo?.content) && (
-                    <Link href='' legacyBehavior>
+                    <Link href={`/blog/${blo?._id}`} legacyBehavior>
                         <a className="text-blue-500 hover:underline text-sm">
                             See More
                         </a>

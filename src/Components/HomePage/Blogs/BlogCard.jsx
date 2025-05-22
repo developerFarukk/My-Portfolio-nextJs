@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link";
 import ContentPriview from "./contentPriview";
 
 const BlogCard = (blogs) => {
@@ -75,25 +76,27 @@ const BlogCard = (blogs) => {
                             </div>
 
                             <div className="ml-auto">
-                                <div
-                                    className="flex items-center gap-1 rounded-full bg-indigo-500/10 px-3 py-1"
-                                >
-                                    <svg
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        className="h-8 w-8 text-indigo-500"
-                                        aria-hidden="true"
+                                <Link href={`/blog/${blo?._id}`}>
+                                    <div
+                                        className="flex items-center gap-1 rounded-full bg-indigo-500/10 px-3 py-1"
                                     >
-                                        <path
-                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                                            strokeWidth="2"
-                                            strokeLinejoin="round"
-                                            strokeLinecap="round"
-                                        />
-                                    </svg>
-                                    <span className="text-md font-medium text-indigo-500">View</span>
-                                </div>
+                                        <svg
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            className="h-8 w-8 text-indigo-500"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                                strokeWidth="2"
+                                                strokeLinejoin="round"
+                                                strokeLinecap="round"
+                                            />
+                                        </svg>
+                                        <span className="text-md font-medium text-indigo-500">View</span>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
 
