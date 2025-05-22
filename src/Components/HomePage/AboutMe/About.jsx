@@ -16,7 +16,7 @@ const About = () => {
     return (
         <div>
 
-            <section className="mt-6">
+            <section className="mt-16">
                 <div className="w-[90%] px-4 mx-auto sm:px-6 lg:px-8 container ">
 
                     {/* About Button */}
@@ -24,7 +24,7 @@ const About = () => {
                         <MobingBorderButton title="About Me" />
                     </div>
 
-                    <div className="mx-auto text-center ">
+                    <div className="mx-auto text-center mt-12">
                         <h2 className="text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl lg:leading-tight text-center">
                             I am an expert in modern
                             <span className="relative inline-block">
@@ -34,7 +34,7 @@ const About = () => {
                         </h2>
                     </div>
 
-                    <div className="grid grid-cols-1   gap-y-6 md:grid-cols-2 gap-x-10 items-center ">
+                    <div className="grid grid-cols-1   gap-y-6 md:grid-cols-2 gap-x-10 items-center mt-6">
 
                         {/* Image Section */}
                         <div>
@@ -69,7 +69,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className="mx-auto text-left md:max-w-lg lg:max-w-3xl md:text-center lg:mt-0 mt-4 p-2">
+                    <div className="mx-auto text-left md:max-w-lg lg:max-w-3xl md:text-center lg:mt-0 mt-12 p-2">
                             <According></According>
                     </div>
                 </div>

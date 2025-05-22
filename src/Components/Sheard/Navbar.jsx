@@ -30,11 +30,7 @@ const Navbar = () => {
             path: '/',
 
         },
-        // {
-        //     title: 'About',
-        //     path: '#about',
 
-        // },
         {
             title: 'Skills',
             path: '#skills',
@@ -43,10 +39,10 @@ const Navbar = () => {
             title: 'Education',
             path: '#education',
         },
-        {
-            title: 'Experience',
-            path: '/',
-        },
+        // {
+        //     title: 'Experience',
+        //     path: '/',
+        // },
         {
             title: 'Project',
             path: '#projects',
@@ -54,6 +50,11 @@ const Navbar = () => {
         {
             title: 'Blogs',
             path: '#blogs',
+        },
+        {
+            title: 'About',
+            path: '#about',
+
         },
         {
             title: 'Service',
@@ -141,7 +142,7 @@ const Navbar = () => {
                         {navItems?.map((navItem) => (
                             <li key={navItem.path}>
                                 <Link
-                                    className=' font-bold akaya-regular inline-block hover-underline-animation text-[16px]'
+                                    className=' font-bold akaya-regular inline-block hover-underline-animation text-[18px]'
                                     href={navItem.path}
                                 >
                                     {navItem.title}

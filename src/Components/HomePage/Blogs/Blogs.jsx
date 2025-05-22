@@ -14,7 +14,7 @@ const Blogs = async () => {
 
     return (
         <div>
-            <div className="mt-1">
+            <div className="mt-12">
 
                 {/*Project Title Button */}
                 <div>

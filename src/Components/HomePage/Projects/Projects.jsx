@@ -17,7 +17,7 @@ const Projects = async () => {
     // console.log("skills data", allData);
 
     return (
-        <div className="mt-1">
+        <div className="mt-16">
 
             {/*Project Title Button */}
             <div>

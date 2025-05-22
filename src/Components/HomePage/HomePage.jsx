@@ -1,4 +1,4 @@
-// import About from "./AboutMe/About";
+import About from "./AboutMe/About";
 import Banner from "./Banner/Banner";
 import Blogs from "./Blogs/Blogs";
 import MyAchivment from "./MyAchiv/MyAchivment";
@@ -17,14 +17,11 @@ const HomePage = () => {
         <div>
 
             {/* Banner section */}
-            <div >
+            <div className="pt-4">
                 <Banner className=""></Banner>
             </div>
 
-            {/* About Me Section */}
-            {/* <div id="about">
-                <About></About>
-            </div> */}
+
 
             {/* Status section  */}
             <div>
@@ -44,6 +41,11 @@ const HomePage = () => {
             {/* Blogs */}
             <div id="blogs">
                 <Blogs />
+            </div>
+
+            {/* About Me Section */}
+            <div id="about">
+                <About />
             </div>
 
             {/* My Achivment section */}
