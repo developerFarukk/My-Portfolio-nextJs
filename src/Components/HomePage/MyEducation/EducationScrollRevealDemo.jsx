@@ -1,66 +1,62 @@
 
+
 "use client";
 import React from "react";
-import Image from "next/image";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import Link from "next/link";
 
-
 const content = [
+
     {
+
         title: (
             <div>
-                <h2 className="text-2xl font-bold  md:text-3xl">
-                    I am currently studying in BSC <br /> <Link href="https://www.sugc.edu.bd/" target="blank" className="text-yellow-200 hover:text-yellow-600">Sunamganj Government College</Link>
+                <h2 className="text-2xl font-bold md:text-3xl">
+                    I am currently studying in BSC <br />
+                    <Link
+                        href="https://www.sugc.edu.bd/"
+                        target="blank"
+                        className="text-purple-400 hover:text-purple-300 transition-colors duration-300"
+                    >
+                        Sunamganj Government College
+                    </Link>
                 </h2>
             </div>
         ),
-        description:
-            "My journey to college started with higher secondary education. Currently, I am a fourth-year student in the Mathematics Department of this college. One of my favorite subjects is mathematics and computer science. Therefore, I am working on programming alongside my studies.",
+        description: "My journey to college started with higher secondary education. Currently, I am a fourth-year student in the Mathematics Department. I'm passionate about mathematics and computer science, and I balance my studies with programming work.",
         content: (
-            <div
-                className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white font-semibold">
-                2020 to Present...
+            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-blue-950 to-purple-950 text-white font-bold text-xl p-6 rounded-lg shadow-lg border border-gray-700">
+                2020 - Present
             </div>
         ),
     },
     {
-        title: "HSC",
-        description:
-            "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+        title: "Higher Secondary Certificate (HSC)",
+        description: "Completed my HSC in Science with excellent results. This period helped me develop strong analytical skills and sparked my interest in computer programming and problem-solving.",
         content: (
-            <div className="flex h-full w-full items-center justify-center text-black font-semibold">
-                2020 to 2019
+            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-emerald-900 to-cyan-900 text-white font-bold text-xl p-6 rounded-lg shadow-lg border border-gray-700">
+                2018 - 2020
             </div>
         ),
     },
     {
-        title: "Version control",
-        description:
-            "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+        title: "Secondary School Certificate (SSC)",
+        description: "Graduated with top marks in Science. Demonstrated early aptitude for mathematics and logical thinking, which became the foundation for my technical skills.",
         content: (
-            <div
-                className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] text-white">
-                Version control
+            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-amber-900 to-orange-900 text-white font-bold text-xl p-6 rounded-lg shadow-lg border border-gray-700">
+                2016 - 2018
             </div>
         ),
-    },
-    {
-        title: "Running out of content",
-        description:
-            "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-        content: (
-            <div
-                className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
-                Running out of content
-            </div>
-        ),
-    },
+    }
+
 ];
+
 export function EducationScrollRevealDemo() {
     return (
-        <div className="w-full py-4">
-            <StickyScroll content={content} />
+        <div className="w-full py-16 ">
+            <div className="max-w-7xl mx-auto px-4">
+                <StickyScroll content={content} />
+            </div>
         </div>
     );
 }
