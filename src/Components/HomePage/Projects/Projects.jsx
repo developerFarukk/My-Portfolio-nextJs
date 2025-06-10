@@ -8,6 +8,8 @@ import PreviewButton from "./ProjectCard/PreviewButton";
 
 
 
+
+
 const Projects = async () => {
 
     const projectData = await getAllProject();
@@ -142,3 +144,4 @@ const Projects = async () => {
 };
 
 export default Projects;
+
