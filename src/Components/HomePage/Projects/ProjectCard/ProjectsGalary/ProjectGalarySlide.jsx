@@ -41,7 +41,7 @@ const ProjectGalarySlide = (project) => {
                         src={pro?.image}
                         height="1000"
                         width="1000"
-                        className="max-h-72 flex justify-start items-start object-cover rounded-xl group-hover/card:shadow-xl"
+                        className="h-72 flex justify-start items-start object-cover rounded-xl group-hover/card:shadow-xl"
                         alt="thumbnail"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
