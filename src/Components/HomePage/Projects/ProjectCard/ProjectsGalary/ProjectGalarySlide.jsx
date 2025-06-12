@@ -59,6 +59,7 @@ const ProjectGalarySlide = (project) => {
 
 export default ProjectGalarySlide;
 
+// hjdfg
 
 {/* Dialog */ }
 // {/* <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
