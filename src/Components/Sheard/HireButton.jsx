@@ -24,12 +24,14 @@ const HireButton = () => {
         <div>
             <div className=" flex items-center justify-center">
                 <Modal>
-                    <ModalTrigger className=" wrapperhire flex justify-center group/modal-btn btn border-2 ">
-                        <span className="group-hover/modal-btn:translate-x-40  text-center transition duration-500 pacifico-regular font-semibold ">
-                            Hire Me
-                        </span>
-                        <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500  z-20">
-                            ✈️ Click
+                    <ModalTrigger className="wrapperhire flex justify-center items-center group/modal-btn btn border-2 border-black hover:border-blue-900 relative h-12 px-12">
+                        <div className="flex items-center justify-center w-full h-full overflow-hidden">
+                            <span className="group-hover/modal-btn:translate-x-40 text-center transition-all duration-500 pacifico-regular font-semibold absolute">
+                                Hire Me
+                            </span>
+                            <div className=" transform -translate-x-40  group-hover/modal-btn:translate-x-0 flex items-center justify-center w-full transition-all duration-500 absolute">
+                               Click ✈️
+                            </div>
                         </div>
                     </ModalTrigger>
                     {/* <ModalBody>

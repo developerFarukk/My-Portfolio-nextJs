@@ -35,7 +35,7 @@ const Projects = async () => {
                             allData.map(pro => (
                                 <div key={pro._id}>
                                     <CardContainer className="inter-var group">
-                                        <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[24rem] h-auto rounded-xl p-6 border shadow-[0px_0px_30px_1px_rgba(204,0,255,0.3)]  group-hover:shadow-[0px_0px_30px_1px_rgba(60,88,255,0.8)] hover:border-yellow-800 transition-all duration-3000">
+                                        <CardBody className=" relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]  w-auto sm:w-[24rem] h-auto rounded-xl p-6 border shadow-[0px_0px_30px_1px_rgba(204,0,255,0.3)]  group-hover:shadow-[0px_0px_30px_1px_rgba(60,88,255,0.8)] hover:border-yellow-800 transition-all duration-3000">
                                             {/* Title */}
                                             <CardItem
                                                 translateZ="50"
@@ -50,7 +50,9 @@ const Projects = async () => {
                                                 translateZ="60"
                                                 className="justify-start items-center flex text-base max-w-sm mb-4 text-fuchsia-500 font-medium"
                                             >
-                                                {pro?.descriptions}
+                                                {pro?.descriptions?.length > 42
+                                                    ? `${pro.descriptions.substring(0, 45)}...`
+                                                    : pro?.descriptions}
                                             </CardItem>
 
                                             {/* Project Image */}

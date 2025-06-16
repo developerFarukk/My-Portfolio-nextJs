@@ -122,7 +122,7 @@ const Banner = () => {
                                     <HoverButton></HoverButton>
                                 </Link> */}
 
-                                <HoverButton></HoverButton>
+                                <HoverButton />
 
                                 <div>
                                     <Link href="#contact" >

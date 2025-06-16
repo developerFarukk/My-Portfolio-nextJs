@@ -29,9 +29,9 @@ const HoverButton = () => {
         <div>
             <div className=" flex justify-center text-center">
                 <HoverBorderGradient
-                    containerClassName="rounded-full"
+                    containerClassName=""
                     as="button"
-                    className=" text-black dark:text-white flex items-center"
+                    className=" text-white flex items-center"
                     onClick={handleDownload}
                 >
                     <div className="">
