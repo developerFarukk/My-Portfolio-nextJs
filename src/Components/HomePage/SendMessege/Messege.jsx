@@ -8,6 +8,7 @@ import { BsTwitterX } from "react-icons/bs";
 import emailjs from '@emailjs/browser';
 import { useState, useRef } from "react";
 import MobingBorderButton from "@/components/Sheard/MobingBorderButton";
+import LinkIcon from "@/components/Sheard/LinkIcon";
 
 const Message = () => {
 
@@ -110,7 +111,7 @@ const Message = () => {
                                                 </div>
                                             </div>
                                             <div className="sm:col-span-2">
-                                                <button type="submit" className="inline-flex items-center justify-center w-full   font-bold  text-lg  btn rounded-md focus:outline-none  bg-gradient-to-r from-blue-900 to-blue-900 ">
+                                                <button type="submit" className="inline-flex items-center text-white justify-center w-full   font-bold  text-lg  btn rounded-md focus:outline-none  bg-gradient-to-r from-blue-900 to-blue-900 ">
                                                     Send
                                                 </button>
                                             </div>
@@ -167,88 +168,13 @@ const Message = () => {
 
                                         <div className="mt-8 lg:mt-auto">
                                             <hr className="border-gray-200" />
-                                            <div className="flex items-center justify-between mt-7">
-                                                <p className="text-lg font-semibold ">Follow us on</p>
+                                            <div className="flex items-center justify-center mt-7">
+                                                {/* <p className="text-lg font-semibold ">Follow us on</p> */}
 
-                                                <ul className="flex items-center justify-end space-x-3">
-                                                    {/* Facebook */}
-                                                    <li>
-                                                        <Link
-                                                            className="transition hover:text-yellow-200"
-                                                            href="https://www.facebook.com/profile.php?id=100010438080711&mibextid=ZbWKwL"
-                                                            target="_blank"
-                                                            rel="noreferrer"
-                                                        >
-                                                            <span className="sr-only">Facebook</span>
-                                                            <SiFacebook className="h-6 w-6" />
-                                                        </Link>
-                                                    </li>
+                                                <div>
+                                                    <LinkIcon />
+                                                </div>
 
-                                                    {/* Instagram */}
-                                                    <li>
-                                                        <Link
-                                                            className="transition hover:text-yellow-200"
-                                                            href="https://www.instagram.com/promoter_hridoy?igsh=ODdsbGJoZTJ0dmRj"
-                                                            target="_blank"
-                                                            rel="noreferrer"
-                                                        >
-                                                            <span className="sr-only">Instagram</span>
-                                                            <FaInstagramSquare className="h-6 w-6" />
-                                                        </Link>
-                                                    </li>
-
-                                                    {/* Twitter/X */}
-                                                    <li>
-                                                        <Link
-                                                            className="transition hover:text-yellow-200"
-                                                            href="https://x.com/Farukk2059?s=09"
-                                                            target="_blank"
-                                                            rel="noreferrer"
-                                                        >
-                                                            <span className="sr-only">Twitter/X</span>
-                                                            <BsTwitterX className="h-6 w-6" />
-                                                        </Link>
-                                                    </li>
-
-                                                    {/* GitHub */}
-                                                    <li>
-                                                        <Link
-                                                            className="transition hover:text-yellow-200"
-                                                            href="https://github.com/FARUK2059"
-                                                            target="_blank"
-                                                            rel="noreferrer"
-                                                        >
-                                                            <span className="sr-only">GitHub</span>
-                                                            <FaGithub className="h-6 w-6" />
-                                                        </Link>
-                                                    </li>
-
-                                                    {/* LinkedIn */}
-                                                    <li>
-                                                        <Link
-                                                            className="transition hover:text-yellow-200"
-                                                            href="https://www.linkedin.com/in/omar-faruk7920?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BX7zN4PjASC6UkPE%2FI0Oslg%3D%3D"
-                                                            target="_blank"
-                                                            rel="noreferrer"
-                                                        >
-                                                            <span className="sr-only">LinkedIn</span>
-                                                            <FaLinkedin className="h-6 w-6" />
-                                                        </Link>
-                                                    </li>
-
-                                                    {/* Discord */}
-                                                    <li>
-                                                        <Link
-                                                            className="transition hover:text-yellow-200"
-                                                            href="https://www.discordapp.com/users/1247190729042956341"
-                                                            target="_blank"
-                                                            rel="noreferrer"
-                                                        >
-                                                            <span className="sr-only">Discord</span>
-                                                            <FaDiscord className="h-6 w-6" />
-                                                        </Link>
-                                                    </li>
-                                                </ul>
                                             </div>
                                         </div>
                                     </div>

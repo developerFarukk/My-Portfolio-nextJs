@@ -1,14 +1,15 @@
 
+"use client"
+
 import Link from "next/link";
 import { SiFacebook } from "react-icons/si";
 import { FaDiscord, FaGithub, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
+
+import LinkIcon from "./LinkIcon";
 
 
 const Footer = () => {
 
-
-    
     return (
         <div>
 
@@ -41,78 +42,11 @@ const Footer = () => {
 
                     <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
                         <div className="mx-auto max-w-sm lg:max-w-none">
-                            <p className="mt-4 text-center  lg:text-left lg:text-lg">
+                            <p className="mt-4 text-center  lg:text-lg">
                                 Click the social icons below to contact me.
                             </p>
-
-                            <div className="mt-6 flex justify-center gap-4 lg:justify-start">
-
-                                {/* Facebook */}
-                                <Link
-                                    className=" transition hover:text-yellow-200"
-                                    href="https://www.facebook.com/profile.php?id=100010438080711&mibextid=ZbWKwL"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <span className="sr-only"> Facebook </span>
-                                    <SiFacebook className="h-6 w-6" />
-                                </Link>
-
-                                {/* Instagram */}
-                                <Link
-                                    className=" transition hover:text-yellow-200"
-                                    href="https://www.instagram.com/promoter_hridoy?igsh=ODdsbGJoZTJ0dmRj"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <span className="sr-only"> Instagram </span>
-                                    <FaInstagramSquare className="h-6 w-6" />
-                                </Link>
-
-                                {/* Twiter/X */}
-                                <Link
-                                    className=" transition hover:text-yellow-200"
-                                    href="https://x.com/Farukk2059?s=09"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <span className="sr-only"> Twiter/X </span>
-                                    <BsTwitterX className="h-6 w-6" />
-                                </Link>
-
-                                {/* GitHub */}
-                                <Link
-                                    className=" transition hover:text-yellow-200"
-                                    href="https://github.com/FARUK2059"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <span className="sr-only"> GitHub </span>
-                                    <FaGithub className="h-6 w-6" />
-                                </Link>
-
-                                {/* Linkedin */}
-                                <Link
-                                    className=" transition hover:text-yellow-200"
-                                    href="https://www.linkedin.com/in/omar-faruk7920?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BX7zN4PjASC6UkPE%2FI0Oslg%3D%3D"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <span className="sr-only"> LinkedIn </span>
-                                    <FaLinkedin className="h-6 w-6" />
-                                </Link>
-
-                                {/* Discord */}
-                                <Link
-                                    className=" transition hover:text-yellow-200"
-                                    href="https://www.discordapp.com/users/1247190729042956341"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <span className="sr-only"> Discord </span>
-                                    <FaDiscord className="h-6 w-6" />
-                                </Link>
-
+                            <div className="mt-4">
+                                <LinkIcon />
                             </div>
                         </div>
 

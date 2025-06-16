@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { BsGithub } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 
 const Navbar = () => {
@@ -153,14 +155,23 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <div className="sm:order-last sm:shrink-0">
-                        <Link href="/">
-                            <Image
+                        <Link href="https://github.com/developerFarukk" target="_blank">
+                            {/* <Image
                                 alt=""
                                 src="https://res.cloudinary.com/dmolqac67/image/upload/v1747737822/bg_dwy0g0.png"
                                 className="size-16 rounded-full  border-2 border-blue-800 object-cover sm:size-[40px]"
                                 height={50}
                                 width={50}
-                            />
+                            /> */}
+                            <div>
+
+                                <motion.div
+                                    whileHover={{ scale: 1.05 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                >
+                                    <BsGithub className="h-10 w-10 " />
+                                </motion.div>
+                            </div>
                         </Link>
                     </div>
                 </div>

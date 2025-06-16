@@ -70,7 +70,7 @@ const Projects = async () => {
 
                                                     {pro.techStack?.map((tech, index) => (
                                                         <div key={index} >
-                                                            <div className="badge badge-primary">{tech}</div>
+                                                            <div className="badge badge-primary bg-gradient-to-r from-slate-800 to-[#000428]">{tech}</div>
                                                         </div>
                                                     ))}
 
